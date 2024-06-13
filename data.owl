@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY ns_transport "file://www.ibm.com/WSRR/Transport#">
+  <!ENTITY wsrr "http://www.ibm.com/xmlns/prod/serviceregistry/6/1/model#">
+  <!ENTITY ont "http://example.org/ontology#">
+]>
+
+<rdf:RDF
+  xmlns:xsd="&xsd;"
+  xmlns:rdf="&rdf;"
+  xmlns:rdfs="&rdfs;"
+  xmlns:owl="&owl;"
+  xmlns:ns_transport="&ns_transport;"
+  xmlns:wsrr="&wsrr;"
+  xmlns:ont="&ont;"
+>
+
+  <owl:Ontology rdf:about="&ns_transport;TransportOntology">
+    <owl:imports rdf:resource="http://www.ibm.com/xmlns/prod/serviceregistry/6/1/model"/> 
+    <wsrr:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transport</wsrr:prefix>
+    <rdfs:label>A transport classification system.</rdfs:label>
+    <rdfs:comment>Cars and buses and some superclasses.</rdfs:comment>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="&ns_transport;Directive">
+    <rdfs:label>Directive</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;RolesAndResponsibilities">
+    <rdfs:label>Roles and Responsibilities</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Requirements">
+    <rdfs:label>Requirements</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Policy">
+    <rdfs:label>Policy</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Public">
+    <rdfs:label>Public</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Workforce">
+    <rdfs:label>Workforce</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;EquipmentAndProperty">
+    <rdfs:label>Equipment and Property</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Environment">
+    <rdfs:label>Environment</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;FederalRequirements">
+    <rdfs:label>Federal Requirements</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;RadiologicalContingencyPlanning">
+    <rdfs:label>Radiological Contingency Planning</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;EmergencyManagementActivities">
+    <rdfs:label>Emergency Management Activities</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;AgencySpecificActivities">
+    <rdfs:label>Agency Specific Activities</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Payloads">
+    <rdfs:label>Payloads</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;SpaceNuclearSystems">
+    <rdfs:label>Space Nuclear Systems</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;RadioactiveMaterial">
+    <rdfs:label>Radioactive Material</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;Framework">
+    <rdfs:label>Framework</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;OtherRequirementsGuidanceAndProcesses">
+    <rdfs:label>Other Requirements Guidance and Processes</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;NuclearFlightSafety">
+    <rdfs:label>Nuclear Flight Safety</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="&ns_transport;SafetyAndMissionAssuranceProcess">
+    <rdfs:label>Safety and Mission Assurance Process</rdfs:label>
+  </owl:Class>
+
+  <ont:Directive rdf:about="&ns_transport;directive">
+    <ont:defines rdf:resource="&ns_transport;rolesAndResponsibilities"/>
+    <ont:provides rdf:resource="&ns_transport;requirements"/>
+    <ont:describes rdf:resource="&ns_transport;federalRequirements"/>
+    <ont:describes rdf:resource="&ns_transport;agencySpecificActivities"/>
+    <ont:establishes rdf:resource="&ns_transport;framework"/>
+  </ont:Directive>
+
+  <ont:RolesAndResponsibilities rdf:about="&ns_transport;rolesAndResponsibilities">
+    <ont:isFor rdf:resource="&ns_transport;nuclearFlightSafety"/>
+  </ont:RolesAndResponsibilities>
+
+  <ont:Requirements rdf:about="&ns_transport;requirements">
+    <ont:isToImplement rdf:resource="&ns_transport;policy"/>
+  </ont:Requirements>
+
+  <ont:Policy rdf:about="&ns_transport;policy">
+    <ont:isToProtect rdf:resource="&ns_transport;public"/>
+    <ont:isToProtect rdf:resource="&ns_transport;workforce"/>
+    <ont:isToProtect rdf:resource="&ns_transport;equipmentAndProperty"/>
+    <ont:isToProtect rdf:resource="&ns_transport;environment"/>
+  </ont:Policy>
+
+  <ont:FederalRequirements rdf:about="&ns_transport;federalRequirements">
+    <ont:includes rdf:resource="&ns_transport;radiologicalContingencyPlanning"/>
+  </ont:FederalRequirements>
+
+  <ont:RadiologicalContingencyPlanning rdf:about="&ns_transport;radiologicalContingencyPlanning">
+    <ont:isPartOf rdf:resource="&ns_transport;emergencyManagementActivities"/>
+  </ont:RadiologicalContingencyPlanning>
+
+  <ont:AgencySpecificActivities rdf:about="&ns_transport;agencySpecificActivities">
+    <ont:areFor rdf:resource="&ns_transport;payloads"/>
+  </ont:AgencySpecificActivities>
+
+  <ont:Payloads rdf:about="&ns_transport;payloads">
+    <ont:contain rdf:resource="&ns_transport;spaceNuclearSystems"/>
+    <ont:contain rdf:resource="&ns_transport;radioactiveMaterial"/>
+  </ont:Payloads>
+
+  <ont:Framework rdf:about="&ns_transport;framework">
+    <ont:integrates rdf:resource="&ns_transport;otherRequirementsGuidanceAndProcesses"/>
+    <ont:canBeImplementedInto rdf:resource="&ns_transport;safetyAndMissionAssuranceProcess"/>
+  </ont:Framework>
+
+  <ont:OtherRequirementsGuidanceAndProcesses rdf:about="&ns_transport;otherRequirementsGuidanceAndProcesses">
+    <ont:areRelevantTo rdf:resource="&ns_transport;nuclearFlightSafety"/>
+  </ont:OtherRequirementsGuidanceAndProcesses>
+
+</rdf:RDF>
