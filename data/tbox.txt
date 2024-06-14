@@ -1,0 +1,93 @@
+**Step 1: Triples**
+
+This directive, defines, the roles and responsibilities  
+The roles and responsibilities, are for, managing and overseeing NASA’s nuclear flight safety activities  
+NASA's nuclear flight safety activities, are, activities  
+This directive, provides, the requirements  
+The requirements, are to implement, NASA's policy  
+NASA's policy, is to protect, the public  
+NASA's policy, is to protect, NASA workforce  
+NASA's policy, is to protect, high-value equipment and property  
+NASA's policy, is to protect, the environment  
+NASA activities and operations, factor, safety  
+Safety, is an integral feature of, programs  
+Safety, is an integral feature of, projects  
+Safety, is an integral feature of, technologies  
+Safety, is an integral feature of, operations  
+Safety, is an integral feature of, facilities  
+This directive, describes, NASA's implementation of Federal requirements  
+NASA's implementation of Federal requirements, is under, NSPM-20  
+NSPM-20, is, “Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems”  
+NSPM-20, is dated, August 20, 2019  
+This directive, includes, radiological contingency planning  
+Radiological contingency planning, is a part of, broader NASA emergency management activities  
+This directive, relates to, ensuring safety and mission success  
+Ensuring safety and mission success, is for, NASA-sponsored payloads  
+NASA-sponsored payloads, contain, space nuclear systems or other radioactive material  
+This directive, establishes, a framework  
+The framework, allows, implementation of other requirements  
+Other requirements, include, DOE nuclear safety and security requirements  
+Other requirements, include, U.S. Air and Space Force range safety requirements  
+Other requirements, include, NASA payload safety processes  
+The framework, is part of, the overall Safety and Mission Assurance process  
+
+**Step 2: T-Box**
+
+```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/ns#> .
+
+### Classes
+:Activity rdf:type owl:Class .
+:Directive rdf:type owl:Class .
+:Document rdf:type owl:Class .
+:Framework rdf:type owl:Class .
+:Material rdf:type owl:Class .
+:NASAActivity rdf:type owl:Class .
+:Policy rdf:type owl:Class .
+:Requirement rdf:type owl:Class .
+:RoleAndResponsibility rdf:type owl:Class .
+:Safety rdf:type owl:Class .
+:SafetyAndMissionAssuranceProcess rdf:type owl:Class .
+
+### Object Properties
+:defines rdf:type owl:ObjectProperty ;
+         rdfs:domain :Directive ;
+         rdfs:range :RoleAndResponsibility .
+:provides rdf:type owl:ObjectProperty ;
+          rdfs:domain :Directive ;
+          rdfs:range :Requirement .
+:isToProtect rdf:type owl:ObjectProperty ;
+             rdfs:domain :Policy ;
+             rdfs:range :Material .
+:factor rdf:type owl:ObjectProperty ;
+        rdfs:domain :NASAActivity ;
+        rdfs:range :Safety .
+:isAnIntegralFeatureOf rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Safety ;
+                       rdfs:range :Activity .
+:describes rdf:type owl:ObjectProperty ;
+           rdfs:domain :Directive ;
+           rdfs:range :Document .
+:includes rdf:type owl:ObjectProperty ;
+          rdfs:domain :Directive ;
+          rdfs:range :Activity .
+:relatesTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Directive ;
+           rdfs:range :SafetyAndMissionAssuranceProcess .
+:establishes rdf:type owl:ObjectProperty ;
+             rdfs:domain :Directive ;
+             rdfs:range :Framework .
+:allows rdf:type owl:ObjectProperty ;
+        rdfs:domain :Framework ;
+        rdfs:range :Requirement .
+
+### Individuals
+:NSPM-20 rdf:type :Document .
+:NASA'sPolicy rdf:type :Policy .
+:RadiologicalContingencyPlanning rdf:type :Activity .
+:SafetyAndMissionAssurance rdf:type :SafetyAndMissionAssuranceProcess .
+```
+
+This T-Box ontology represents a simplified model based on the provided text, focusing on the relationships between directives, policies, requirements, and the broader framework of safety and mission assurance within NASA's context.

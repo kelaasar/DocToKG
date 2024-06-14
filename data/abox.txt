@@ -1,0 +1,14 @@
+```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/ns#> .
+
+### Individuals
+:thisDirective rdf:type :Directive ;
+               :defines :managingAndOverseeingNASAsNuclearFlightSafetyActivities ;
+               :provides :theRequirements ;
+               :describes :NSPM-20 ;
+               :includes :radiologicalContingencyPlanning ;
+               :relatesTo :ensuringSafetyAndMissionSuccess ;
+               :establishes :aFramework .
+```
