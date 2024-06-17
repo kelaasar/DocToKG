@@ -2,7 +2,7 @@
 
 This directive, defines, the roles and responsibilities  
 The roles and responsibilities, are for, managing and overseeing NASA’s nuclear flight safety activities  
-NASA's nuclear flight safety activities, are, activities  
+NASA's nuclear flight safety activities, are activities  
 This directive, provides, the requirements  
 The requirements, are to implement, NASA's policy  
 NASA's policy, is to protect, the public  
@@ -15,79 +15,163 @@ Safety, is an integral feature of, projects
 Safety, is an integral feature of, technologies  
 Safety, is an integral feature of, operations  
 Safety, is an integral feature of, facilities  
-This directive, describes, NASA's implementation of Federal requirements  
-NASA's implementation of Federal requirements, is under, NSPM-20  
-NSPM-20, is, “Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems”  
+This directive, describes, NASA's implementation  
+NASA's implementation, is of, Federal requirements under NSPM-20  
+NSPM-20, is titled, “Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems”  
 NSPM-20, is dated, August 20, 2019  
 This directive, includes, radiological contingency planning  
 Radiological contingency planning, is a part of, broader NASA emergency management activities  
-This directive, relates to, ensuring safety and mission success  
-Ensuring safety and mission success, is for, NASA-sponsored payloads  
+This directive, relates to, agency-specific activities  
+Agency-specific activities, ensure, safety and mission success  
+Safety and mission success, are for, NASA-sponsored payloads  
 NASA-sponsored payloads, contain, space nuclear systems or other radioactive material  
 This directive, establishes, a framework  
-The framework, allows, implementation of other requirements  
-Other requirements, include, DOE nuclear safety and security requirements  
-Other requirements, include, U.S. Air and Space Force range safety requirements  
-Other requirements, include, NASA payload safety processes  
-The framework, is part of, the overall Safety and Mission Assurance process  
+The framework, implements, other requirements, guidance, and processes  
+Other requirements, guidance, and processes, are relevant to, nuclear flight safety  
+Nuclear flight safety, is implemented into, the overall Safety and Mission Assurance process  
 
 **Step 2: T-Box**
 
-```turtle
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix : <http://example.org/ns#> .
-
-### Classes
-:Activity rdf:type owl:Class .
-:Directive rdf:type owl:Class .
-:Document rdf:type owl:Class .
-:Framework rdf:type owl:Class .
-:Material rdf:type owl:Class .
-:NASAActivity rdf:type owl:Class .
-:Policy rdf:type owl:Class .
-:Requirement rdf:type owl:Class .
-:RoleAndResponsibility rdf:type owl:Class .
-:Safety rdf:type owl:Class .
-:SafetyAndMissionAssuranceProcess rdf:type owl:Class .
-
-### Object Properties
-:defines rdf:type owl:ObjectProperty ;
-         rdfs:domain :Directive ;
-         rdfs:range :RoleAndResponsibility .
-:provides rdf:type owl:ObjectProperty ;
-          rdfs:domain :Directive ;
-          rdfs:range :Requirement .
-:isToProtect rdf:type owl:ObjectProperty ;
-             rdfs:domain :Policy ;
-             rdfs:range :Material .
-:factor rdf:type owl:ObjectProperty ;
-        rdfs:domain :NASAActivity ;
-        rdfs:range :Safety .
-:isAnIntegralFeatureOf rdf:type owl:ObjectProperty ;
-                       rdfs:domain :Safety ;
-                       rdfs:range :Activity .
-:describes rdf:type owl:ObjectProperty ;
-           rdfs:domain :Directive ;
-           rdfs:range :Document .
-:includes rdf:type owl:ObjectProperty ;
-          rdfs:domain :Directive ;
-          rdfs:range :Activity .
-:relatesTo rdf:type owl:ObjectProperty ;
-           rdfs:domain :Directive ;
-           rdfs:range :SafetyAndMissionAssuranceProcess .
-:establishes rdf:type owl:ObjectProperty ;
-             rdfs:domain :Directive ;
-             rdfs:range :Framework .
-:allows rdf:type owl:ObjectProperty ;
-        rdfs:domain :Framework ;
-        rdfs:range :Requirement .
-
-### Individuals
-:NSPM-20 rdf:type :Document .
-:NASA'sPolicy rdf:type :Policy .
-:RadiologicalContingencyPlanning rdf:type :Activity .
-:SafetyAndMissionAssurance rdf:type :SafetyAndMissionAssuranceProcess .
 ```
+@prefix : <http://terminology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-This T-Box ontology represents a simplified model based on the provided text, focusing on the relationships between directives, policies, requirements, and the broader framework of safety and mission assurance within NASA's context.
+<http://terminology>
+    rdf:type owl:Ontology .
+
+:Directive
+    rdf:type owl:Class .
+
+:RoleAndResponsibility
+    rdf:type owl:Class .
+
+:Activity
+    rdf:type owl:Class .
+
+:Requirement
+    rdf:type owl:Class .
+
+:Policy
+    rdf:type owl:Class .
+
+:Entity
+    rdf:type owl:Class .
+
+:Feature
+    rdf:type owl:Class .
+
+:Implementation
+    rdf:type owl:Class .
+
+:Document
+    rdf:type owl:Class .
+
+:Planning
+    rdf:type owl:Class .
+
+:ActivityType
+    rdf:type owl:Class .
+
+:Payload
+    rdf:type owl:Class .
+
+:Framework
+    rdf:type owl:Class .
+
+:Process
+    rdf:type owl:Class .
+
+:defines
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :RoleAndResponsibility .
+
+:are_for
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :RoleAndResponsibility ;
+    rdfs:range :Activity .
+
+:provides
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Requirement .
+
+:is_to_protect
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Entity .
+
+:factor
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Activity ;
+    rdfs:range :Feature .
+
+:is_an_integral_feature_of
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Feature ;
+    rdfs:range :ActivityType .
+
+:describes
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Implementation .
+
+:is_of
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Implementation ;
+    rdfs:range :Document .
+
+:is_titled
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range rdf:Literal .
+
+:is_dated
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range rdf:Literal .
+
+:includes
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Planning .
+
+:is_a_part_of
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Planning ;
+    rdfs:range :ActivityType .
+
+:relates_to
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :ActivityType .
+
+:ensure
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :ActivityType ;
+    rdfs:range :Feature .
+
+:contain
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Payload ;
+    rdfs:range rdf:Literal .
+
+:establishes
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Framework .
+
+:implements
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Framework ;
+    rdfs:range :Process .
+
+:are_relevant_to
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :ActivityType .
+```
