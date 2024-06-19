@@ -1,0 +1,46 @@
+Step 1: Triples
+NPR 8715.26, is, a directive
+The directive, defines, the roles and responsibilities
+The roles and responsibilities, are for, managing and overseeing NASA's nuclear flight safety activities
+The directive, provides, the requirements
+The requirements, implement, NASA's policy
+NASA's policy, protects, the public
+NASA's policy, protects, NASA workforce
+NASA's policy, protects, high-value equipment and property
+NASA's policy, protects, the environment
+The directive, describes, NASA's implementation of Federal requirements
+The Federal requirements, are under, National Security Presidential Memorandum (NSPM)-20
+NSPM-20, is, "Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems"
+NSPM-20, is dated, August 20, 2019
+Radiological contingency planning (RCP), is part of, broader NASA emergency management activities
+The directive, establishes, a framework
+The framework, includes, other requirements
+The framework, includes, guidance
+The framework, includes, processes
+The directive, is applicable to, NASA Headquarters
+The directive, is applicable to, NASA Centers
+The directive, is applicable to, Component Facilities
+The directive, is applicable to, Technical and Service Support Centers
+The directive, applies to, the Jet Propulsion Laboratory
+The Jet Propulsion Laboratory, is, a Federally-Funded Research and Development Center
+The directive, applies to, other contractors
+The directive, applies to, recipients of grants
+The directive, applies to, cooperative agreements
+The directive, applies to, other agreements
+The directive, is applicable to, activities involving flight of SNS
+The directive, is applicable to, activities involving other radioactive material
+NASA, is, the sponsoring agency
+The activities, involve, the use of NASA personnel and assets
+The SNS or other radioactive material, has the potential to affect, Earth’s biosphere
+The directive, considers, nuclear safety
+The directive, considers, radiological risk
+The nuclear safety and radiological risk, are from, normal conditions
+The nuclear safety and radiological risk, are from, off-normal conditions
+The conditions, are during, all phases of flight
+The SNS or other radioactive material, has the potential to affect, Earth’s biosphere
+The phases of flight, start with, installation of the SNS or other radioactive material into an integrated launch vehicle on Earth
+Matters, are addressed by, other NASA disciplines
+The directive, does not address, procedures
+The directive, does not address, requirements
+The directive, does not address, licensing details for using, storing
+

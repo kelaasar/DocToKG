@@ -1,58 +1,71 @@
 @prefix : <http://terminology#> .
 @prefix assertions: <http://assertions#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-assertions:ontologyIndividual rdf:type owl:NamedIndividual .
+assertions:thisDirective rdf:type :Directive ;
+    :defines assertions:rolesAndResponsibilities ;
+    :provides assertions:requirements ;
+    :describes assertions:NASAsImplementationOfFederalRequirements ;
+    :includes assertions:radiologicalContingencyPlanning ;
+    :relatesTo assertions:ensuringSafetyAndMissionSuccess ;
+    :establishes assertions:aFramework .
 
-assertions:ThisDirective rdf:type :Directive ;
-    :defines assertions:RolesAndResponsibilities ;
-    :provides assertions:TheRequirements ;
-    :describes assertions:NASAsImplementation ;
-    :includes assertions:RadiologicalContingencyPlanning ;
-    :relates_to assertions:AgencySpecificActivities ;
-    :establishes assertions:TheFramework .
-
-assertions:RolesAndResponsibilities rdf:type :RoleAndResponsibility ;
-    :are_for assertions:NASAsNuclearFlightSafetyActivities .
+assertions:rolesAndResponsibilities rdf:type :RolesAndResponsibilities ;
+    :areFor assertions:NASAsNuclearFlightSafetyActivities .
 
 assertions:NASAsNuclearFlightSafetyActivities rdf:type :Activity ;
-    :factor assertions:Safety .
+    :factor assertions:safety .
 
-assertions:TheRequirements rdf:type :Requirement ;
-    :is_to_protect assertions:ThePublic, assertions:NASAWorkforce, assertions:HighValueEquipmentAndProperty, assertions:TheEnvironment .
+assertions:requirements rdf:type :Requirement ;
+    :toImplement assertions:NASAsPolicy .
 
-assertions:Safety rdf:type :Feature ;
-    :is_an_integral_feature_of assertions:Programs, assertions:Projects, assertions:Technologies, assertions:Operations, assertions:Facilities .
+assertions:NASAsPolicy rdf:type :Policy ;
+    :isToProtect assertions:thePublic ;
+    :isToProtect assertions:NASAWorkforce ;
+    :isToProtect assertions:highValueEquipmentAndProperty ;
+    :isToProtect assertions:theEnvironment .
 
-assertions:NASAsImplementation rdf:type :Implementation ;
-    :is_of assertions:NSPM20 .
+assertions:safety rdf:type :SafetyFeature ;
+    :isAnIntegralFeatureOf assertions:programs ;
+    :isAnIntegralFeatureOf assertions:projects ;
+    :isAnIntegralFeatureOf assertions:technologies ;
+    :isAnIntegralFeatureOf assertions:operations ;
+    :isAnIntegralFeatureOf assertions:facilities .
 
-assertions:NSPM20 rdf:type :Document ;
-    :is_titled "Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems"@en ;
-    :is_dated "August 20, 2019"^^xsd:string .
+assertions:NASAsImplementationOfFederalRequirements rdf:type :Implementation ;
+    :isUnder assertions:NSPM20 .
 
-assertions:RadiologicalContingencyPlanning rdf:type :Planning ;
-    :is_a_part_of assertions:BroaderNASAEmergencyManagementActivities .
+assertions:NSPM20 rdf:type :NSPM ;
+    :isDated "2019-08-20"^^xsd:date .
 
-assertions:AgencySpecificActivities rdf:type :ActivityType ;
-    :ensure assertions:SafetyAndMissionSuccess .
+assertions:radiologicalContingencyPlanning rdf:type :Planning ;
+    :isAPartOf assertions:NASAEmergencyManagementActivities .
 
-assertions:SafetyAndMissionSuccess rdf:type :Feature ;
-    :are_for assertions:NASASponsoredPayloads .
+assertions:ensuringSafetyAndMissionSuccess rdf:type :SuccessFactor ;
+    :isFor assertions:NASASponsoredPayloads .
 
 assertions:NASASponsoredPayloads rdf:type :Payload ;
-    :contain "space nuclear systems" ;
-    :contain "other radioactive material" .
+    :contains assertions:spaceNuclearSystemsOrOtherRadioactiveMaterial .
 
-assertions:TheFramework rdf:type :Framework ;
-    :implements assertions:OtherRequirementsGuidanceAndProcesses .
+assertions:aFramework rdf:type :Framework ;
+    :implements assertions:otherRequirementsGuidanceAndProcesses .
 
-assertions:OtherRequirementsGuidanceAndProcesses rdf:type :Process ;
-    :are_relevant_to assertions:NuclearFlightSafety .
+assertions:otherRequirementsGuidanceAndProcesses rdf:type :Process ;
+    :areRelevantTo assertions:nuclearFlightSafety .
 
-assertions:NuclearFlightSafety rdf:type :ActivityType ;
-    :is_implemented_into assertions:TheOverallSafetyAndMissionAssuranceProcess .
+assertions:nuclearFlightSafety rdf:type :Activity ;
+    :isImplementedInto assertions:theOverallSafetyAndMissionAssuranceProcess .
 
-assertions:TheOverallSafetyAndMissionAssuranceProcess rdf:type :Process .
+assertions:thePublic rdf:type :Entity .
+assertions:NASAWorkforce rdf:type :Entity .
+assertions:highValueEquipmentAndProperty rdf:type :Entity .
+assertions:theEnvironment rdf:type :Entity .
+assertions:programs rdf:type :Activity .
+assertions:projects rdf:type :Activity .
+assertions:technologies rdf:type :Activity .
+assertions:operations rdf:type :Activity .
+assertions:facilities rdf:type :Activity .
+assertions:NASAEmergencyManagementActivities rdf:type :Activity .
+assertions:spaceNuclearSystemsOrOtherRadioactiveMaterial rdf:type :Entity .
+assertions:theOverallSafetyAndMissionAssuranceProcess rdf:type :Activity .

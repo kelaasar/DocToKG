@@ -1,0 +1,214 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Document a owl:Class .
+:Directive a owl:Class .
+:Public a owl:Class .
+:Version a owl:Class .
+:RadioactiveMaterial a owl:Class .
+:GroundProcessingFacility a owl:Class .
+:SpaceUse a owl:Class .
+:Information a owl:Class .
+:NEPACompliance a owl:Class .
+:NEPAAnalysis a owl:Class .
+:SafetyData a owl:Class .
+:MandatoryAction a owl:Class .
+:DiscretionaryPrivilege a owl:Class .
+:Possibility a owl:Class .
+:GoodPractice a owl:Class .
+:ExpectedOutcome a owl:Class .
+:DescriptiveMaterial a owl:Class .
+:Conflict a owl:Class .
+:Provision a owl:Class .
+:FederalStatute a owl:Class .
+:Regulation a owl:Class .
+:HigherLevelDirective a owl:Class .
+:DocumentCitation a owl:Class .
+:RecentVersion a owl:Class .
+:SMATechnicalAuthority a owl:Class .
+:AuthorityDocument a owl:Class .
+:Reference a owl:Class .
+:Citation a owl:Class .
+:NASAOrganization a owl:Class .
+:Policy a owl:Class .
+:PresidentialMemorandum a owl:Class .
+:Requirement a owl:Class .
+:Program a owl:Class .
+:Standard a owl:Class .
+:IncidentAnnex a owl:Class .
+:Plan a owl:Class .
+:Compliance a owl:Class .
+:Review a owl:Class .
+:Assessment a owl:Class .
+:Audit a owl:Class .
+:Chapter a owl:Class .
+:Appendix a owl:Class .
+:GeneralSafetyProgramRequirement a owl:Class .
+:Practice a owl:Class .
+:FederalRequirement a owl:Class .
+:Date a owl:Class .
+:Process a owl:Class .
+:Responsibility a owl:Class .
+:Authority a owl:Class .
+:Agency a owl:Class .
+:NationalResponseFramework a owl:Class .
+:InternationalCommitment a owl:Class .
+:Procedure a owl:Class .
+:LevelOfReview a owl:Class .
+:Analysis a owl:Class .
+:NuclearLaunch a owl:Class .
+:ReentryAuthorization a owl:Class .
+:Quantity a owl:Class .
+:Form a owl:Class .
+:PotentialRadiologicalRisk a owl:Class .
+:HumanHealthExposure a owl:Class .
+:LandUseImpact a owl:Class .
+:PropertyUseImpact a owl:Class .
+:Reentry a owl:Class .
+:PlannedReturnToEarth a owl:Class .
+:Spaceflight a owl:Class .
+:UnplannedReentry a owl:Class .
+:UnintendedEvent a owl:Class .
+:SafetyAnalysis a owl:Class .
+:RCPProcess a owl:Class .
+:ResponsibilityRequirement a owl:Class .
+:Role a owl:Class .
+:Actor a owl:Class .
+:Implementation a owl:Class .
+:Outcome a owl:Class .
+:OfficialInCharge a owl:Class .
+:Action a owl:Class .
+
+:does_not_bind a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Public .
+
+:is_uncontrolled a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Version .
+
+:to_verify a owl:ObjectProperty ;
+    rdfs:domain :Check ;
+    rdfs:range :Version .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :This ;
+    rdfs:range :Version .
+
+:does_not_cover a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :RadioactiveMaterial, :GroundProcessingFacility, :SpaceUse .
+
+:for_additional_information_on_these_matters a owl:ObjectProperty ;
+    rdfs:domain :See ;
+    rdfs:range :Information .
+
+:does_not_serve a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :NEPACompliance, :NEPAAnalysis, :SafetyData .
+
+:are_denoted a owl:ObjectProperty ;
+    rdfs:domain :MandatoryAction ;
+    rdfs:range :StatementsContainingTheTermShall .
+
+:denotes a owl:ObjectProperty ;
+    rdfs:domain :Term ;
+    rdfs:range :DiscretionaryPrivilege, :Possibility, :GoodPractice, :ExpectedOutcome, :DescriptiveMaterial .
+
+:exist a owl:ObjectProperty ;
+    rdfs:domain :Conflict ;
+    rdfs:range :Provision, :FederalStatute, :Regulation, :HigherLevelDirective .
+
+:take_precedence a owl:ObjectProperty ;
+    rdfs:domain :Statutes, :Regulations, :HigherLevelDirectives ;
+    rdfs:range :ProvisionsOfThisDirective .
+
+:are_assumed a owl:ObjectProperty ;
+    rdfs:domain :DocumentCitations ;
+    rdfs:range :RecentVersion .
+
+:may_be_authorized a owl:ObjectProperty ;
+    rdfs:domain :UseOfMoreRecentVersionsOfCitedDocuments ;
+    rdfs:range :SMATechnicalAuthority .
+
+:are_listed a owl:ObjectProperty ;
+    rdfs:domain :Documents ;
+    rdfs:range :AuthorityDocument, :Reference .
+
+:are_called_out a owl:ObjectProperty ;
+    rdfs:domain :Documents ;
+    rdfs:range :Reference, :Authority .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :NPD1000.3, :NPD8700.1, :NSPM-20, :NPR7120.5, :NPR8715.5, :NPR8715.7, :NASA-STD-8719.24, :NASA-STD-8719.25, :Nuclear/RadiologicalIncidentAnnex, :NPR8715.3D, :NPI8715.93 ;
+    rdfs:range :NASAOrganization, :Policy, :PresidentialMemorandum, :Requirement, :Program, :Standard, :IncidentAnnex, :Plan, :GeneralSafetyProgramRequirement, :Practice .
+
+:is_monitored a owl:ObjectProperty ;
+    rdfs:domain :Compliance ;
+    rdfs:range :SMATechnicalAuthority .
+
+:may_be_verified a owl:ObjectProperty ;
+    rdfs:domain :Compliance ;
+    rdfs:range :Review, :Assessment, :Audit .
+
+:implements a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :FederalRequirement .
+
+:is_dated a owl:ObjectProperty ;
+    rdfs:domain :NSPM-20 ;
+    rdfs:range :Date .
+
+:updates a owl:ObjectProperty ;
+    rdfs:domain :NSPM-20 ;
+    rdfs:range :Process .
+
+:ensures a owl:ObjectProperty ;
+    rdfs:domain :NSPM-20 ;
+    rdfs:range :SafetyAnalysis, :LaunchAuthorizationProcess .
+
+:incorporates a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Responsibility, :Authority, :NationalResponseFramework, :InternationalCommitment .
+
+:are_involved a owl:ObjectProperty ;
+    rdfs:domain :Agencies ;
+    rdfs:range :LaunchOfSNSOrRadioactiveMaterial .
+
+:are_required a owl:ObjectProperty ;
+    rdfs:domain :ProceduresAndLevelsOfReviewAndAnalysis ;
+    rdfs:range :NuclearLaunch, :ReentryAuthorization .
+
+:vary a owl:ObjectProperty ;
+    rdfs:domain :ProceduresAndLevelsOfReviewAndAnalysis ;
+    rdfs:range :Quantity, :Form, :PotentialRadiologicalRisk .
+
+:includes a owl:ObjectProperty ;
+    rdfs:domain :PotentialRadiologicalRisk ;
+    rdfs:range :HumanHealthExposure, :LandUseImpact, :PropertyUseImpact .
+
+:refers a owl:ObjectProperty ;
+    rdfs:domain :ReentryOrPlannedReturnToEarth, :UnplannedReentry ;
+    rdfs:range :Spaceflight, :UnintendedEvent .
+
+:is_addressed a owl:ObjectProperty ;
+    rdfs:domain :ReentryOrPlannedReturnToEarth, :UnplannedReentry ;
+    rdfs:range :AuthorizationOrConcurrenceProcess, :SafetyAnalysis, :RCPProcess .
+
+:may_be_delegated a owl:ObjectProperty ;
+    rdfs:domain :ResponsibilitiesAndRequirements ;
+    rdfs:range :Role, :Actor .
+
+:remains_accountable a owl:ObjectProperty ;
+    rdfs:domain :StatedRoleOrActor ;
+    rdfs:range :Implementation, :Outcome .
+
+:is_responsible a owl:ObjectProperty ;
+    rdfs:domain :OfficialInCharge ;
+    rdfs:range :Action, :Outcome .
+
+:is_accountable a owl:ObjectProperty ;
+    rdfs:domain :OfficialInCharge ;
+    rdfs:range :Action, :Outcome .
+
+

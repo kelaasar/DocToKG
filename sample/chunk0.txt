@@ -1,0 +1,122 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Directive a owl:Class .
+:Roles_and_Responsibilities a owl:Class .
+:Requirements a owl:Class .
+:Policy a owl:Class .
+:Public a owl:Class .
+:NASA_Workforce a owl:Class .
+:High_Value_Equipment_and_Property a owl:Class .
+:Environment a owl:Class .
+:Federal_Requirements a owl:Class .
+:NSPM_20 a owl:Class .
+:RCP a owl:Class .
+:Framework a owl:Class .
+:Guidance a owl:Class .
+:Processes a owl:Class .
+:NASA_Headquarters a owl:Class .
+:NASA_Centers a owl:Class .
+:Component_Facilities a owl:Class .
+:Technical_and_Service_Support_Centers a owl:Class .
+:Jet_Propulsion_Laboratory a owl:Class .
+:Contractors a owl:Class .
+:Recipients_of_Grants a owl:Class .
+:Cooperative_Agreements a owl:Class .
+:Other_Agreements a owl:Class .
+:Activities a owl:Class .
+:SNS a owl:Class .
+:Radioactive_Material a owl:Class .
+:NASA a owl:Class .
+:Personnel_and_Assets a owl:Class .
+:Earth_Biosphere a owl:Class .
+:Nuclear_Safety a owl:Class .
+:Radiological_Risk a owl:Class .
+:Conditions a owl:Class .
+:Phases_of_Flight a owl:Class .
+:Integrated_Launch_Vehicle a owl:Class .
+:Other_NASA_Disciplines a owl:Class .
+:Procedures a owl:Class .
+:Licensing_Details a owl:Class .
+
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Roles_and_Responsibilities .
+
+:are_for a owl:ObjectProperty ;
+    rdfs:domain :Roles_and_Responsibilities ;
+    rdfs:range :Managing_and_Overseeing .
+
+:provides a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Requirements .
+
+:implement a owl:ObjectProperty ;
+    rdfs:domain :Requirements ;
+    rdfs:range :Policy .
+
+:protects a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Public, :NASA_Workforce, :High_Value_Equipment_and_Property, :Environment .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Federal_Requirements .
+
+:are_under a owl:ObjectProperty ;
+    rdfs:domain :Federal_Requirements ;
+    rdfs:range :NSPM_20 .
+
+:is_part_of a owl:ObjectProperty ;
+    rdfs:domain :RCP ;
+    rdfs:range :Broader_NASA_Emergency_Management_Activities .
+
+:establishes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Framework .
+
+:includes a owl:ObjectProperty ;
+    rdfs:domain :Framework ;
+    rdfs:range :Requirements, :Guidance, :Processes .
+
+:is_applicable_to a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :NASA_Headquarters, :NASA_Centers, :Component_Facilities, :Technical_and_Service_Support_Centers, :Jet_Propulsion_Laboratory, :Contractors, :Recipients_of_Grants, :Cooperative_Agreements, :Other_Agreements, :Activities .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Jet_Propulsion_Laboratory ;
+    rdfs:range :Federally_Funded_Research_and_Development_Center .
+
+:involve a owl:ObjectProperty ;
+    rdfs:domain :Activities ;
+    rdfs:range :Personnel_and_Assets .
+
+:has_the_potential_to_affect a owl:ObjectProperty ;
+    rdfs:domain :SNS, :Radioactive_Material ;
+    rdfs:range :Earth_Biosphere .
+
+:considers a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Nuclear_Safety, :Radiological_Risk .
+
+:are_from a owl:ObjectProperty ;
+    rdfs:domain :Nuclear_Safety, :Radiological_Risk ;
+    rdfs:range :Conditions .
+
+:are_during a owl:ObjectProperty ;
+    rdfs:domain :Conditions ;
+    rdfs:range :Phases_of_Flight .
+
+:start_with a owl:ObjectProperty ;
+    rdfs:domain :Phases_of_Flight ;
+    rdfs:range :Installation_of_SNS_or_Radioactive_Material_into_Integrated_Launch_Vehicle_on_Earth .
+
+:are_addressed_by a owl:ObjectProperty ;
+    rdfs:domain :Matters ;
+    rdfs:range :Other_NASA_Disciplines .
+
+:does_not_address a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Procedures, :Requirements, :Licensing_Details .
+
+
