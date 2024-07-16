@@ -1,0 +1,107 @@
+**Step 1: Triples**
+
+This directive, defines, the roles and responsibilities  
+The roles and responsibilities, are for, managing and overseeing NASA’s nuclear flight safety activities  
+NASA's nuclear flight safety activities, are activities  
+This directive, provides, the requirements  
+The requirements, are to implement, NASA's policy  
+NASA's policy, is to protect, the public  
+NASA's policy, is to protect, NASA workforce  
+NASA's policy, is to protect, high-value equipment and property  
+NASA's policy, is to protect, the environment  
+NASA activities and operations, factor, safety  
+Safety, is an integral feature of, programs  
+Safety, is an integral feature of, projects  
+Safety, is an integral feature of, technologies  
+Safety, is an integral feature of, operations  
+Safety, is an integral feature of, facilities  
+This directive, describes, NASA's implementation of Federal requirements  
+NASA's implementation of Federal requirements, is under, NSPM-20  
+NSPM-20, is dated, August 20, 2019  
+This directive, establishes, a framework  
+The framework, allows, implementation of other requirements  
+The framework, allows, implementation of guidance  
+The framework, allows, implementation of processes  
+Other requirements, guidance, and processes, are relevant to, nuclear flight safety  
+Nuclear flight safety, is part of, Safety and Mission Assurance process  
+
+**Step 2: T-Box**
+
+```
+@prefix : <http://terminology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a owl:Ontology .
+
+### Classes
+
+:Activity a owl:Class .
+:Date a owl:Class .
+:Directive a owl:Class .
+:Entity a owl:Class .
+:Framework a owl:Class .
+:Guidance a owl:Class .
+:Implementation a owl:Class .
+:Policy a owl:Class .
+:Process a owl:Class .
+:Requirement a owl:Class .
+:RoleAndResponsibility a owl:Class .
+:Safety a owl:Class .
+
+### Object Properties
+
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :RoleAndResponsibility .
+
+:areFor a owl:ObjectProperty ;
+    rdfs:domain :RoleAndResponsibility ;
+    rdfs:range :Activity .
+
+:provides a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Requirement .
+
+:isToImplement a owl:ObjectProperty ;
+    rdfs:domain :Requirement ;
+    rdfs:range :Policy .
+
+:isToProtect a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Entity .
+
+:factor a owl:ObjectProperty ;
+    rdfs:domain :Activity ;
+    rdfs:range :Safety .
+
+:isAnIntegralFeatureOf a owl:ObjectProperty ;
+    rdfs:domain :Safety ;
+    rdfs:range :Activity .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Implementation .
+
+:isUnder a owl:ObjectProperty ;
+    rdfs:domain :Implementation ;
+    rdfs:range :Date .
+
+:establishes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Framework .
+
+:allows a owl:ObjectProperty ;
+    rdfs:domain :Framework ;
+    rdfs:range :Implementation .
+
+:areRelevantTo a owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Activity .
+
+### Individuals
+
+:NSPM-20 a :Date .
+```

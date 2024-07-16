@@ -1,11 +1,8 @@
 Step 1: Triples
-This document, does not bind, the public
-This document, is uncontrolled, when printed
-Check, the NASA Online Directives Information System (NODIS) Library, to verify
-This, is, the correct version
-This directive, does not cover, shipping radioactive materials
-This directive, does not cover, handling radioactive materials
-This directive, does not cover, radioactive materials in ground processing facilities
+This directive, does not bind, the public
+This directive, is, uncontrolled when printed
+Check, the NASA Online Directives Information System (NODIS) Library, to verify that this is the correct version before use
+This directive, does not cover, shipping or handling radioactive materials in ground processing facilities or activities
 This directive, does not cover, preparation of the actual radioactive material for space use
 See, NPR 1800.1, for additional information on these matters
 See, Center-specific Radiation Protection Program requirements and procedures, for additional information on these matters
@@ -14,62 +11,44 @@ This directive, does not serve, to meet National Environmental Policy Act (NEPA)
 This directive, does not serve, to govern the level of NEPA analysis required for a mission
 This directive, does not serve, to govern if there is sufficient safety data to make NEPA determinations
 See, NPR 8580.1, for additional information on NEPA matters
-All mandatory actions, are denoted, by statements containing the term “shall”
+All mandatory actions, are denoted by, statements containing the term “shall”
 The term “may”, denotes, a discretionary privilege or permission
 The term “can”, denotes, statements of possibility or capability
-The term “should”, denotes, a good practice
-The term “should”, is recommended, but not required
+The term “should”, denotes, a good practice and is recommended but not required
 The term “will”, denotes, expected outcome
 The term “are/is”, denotes, descriptive material
-Conflicts, exist, between provisions of this directive and Federal statutes or regulations
-Conflicts, exist, between provisions of this directive and higher-level NASA directives
-Statutes, take precedence, over provisions of this directive
-Regulations, take precedence, over provisions of this directive
-Higher-level NASA directives, take precedence, over provisions of this directive
-All document citations, are assumed, to be the latest version
-Use, of more recent versions of cited documents, may be authorized
-The responsible SMA Technical Authority (TA), authorizes, use of more recent versions of cited documents
-Some documents, are listed, as an authority document
-Some documents, are listed, as a reference
-Documents, are called out, as either a reference or authority in the citations found within the text
-NPD 1000.3, is, The NASA Organization
-NPD 8700.1, is, NASA Policy for Safety and Mission Success
-NSPM-20, is, National Security Presidential Memorandum on the Launch of Spacecraft Containing Space Nuclear Systems
-NPR 7120.5, is, NASA Space Flight Program and Project Management Requirements
-NPR 8715.5, is, NASA Range Flight Safety Program
-NPR 8715.7, is, NASA Payload Safety Program
-NASA-STD-8719.24, is, NASA Payload Safety Requirements
-NASA-STD-8719.25, is, Range Flight Safety Requirements
-Nuclear/Radiological Incident Annex, is, to the Response and Recovery Federal Interagency Operational Plans
-Compliance, is monitored, by the SMA TA
-Compliance, may be verified, as part of selected life cycle reviews
-Compliance, may be verified, by assessments
-Compliance, may be verified, by reviews
-Compliance, may be verified, by audits of the requirements and processes defined within this directive
-Chapter 6, is, “Nuclear Safety for Launching of Radioactive Materials”
-Appendix D, is, “Activity and Radioactive Material Limits - Basic Al /A2 Values”
-NPR 8715.3D, is, NASA General Safety Program Requirements
-NPI 8715.93, is, “Impacts of NSPM-20 on NASA Nuclear Flight Safety Requirements and Practices”
+Conflicts, exist between, provisions of this directive and Federal statutes or regulations
+Conflicts, exist between, provisions of this directive and higher-level NASA directives
+Statutes, take precedence over, provisions of this directive
+Regulations, take precedence over, provisions of this directive
+Higher-level NASA directives, take precedence over, provisions of this directive
+All document citations, are assumed to be, the latest version unless otherwise noted
+Use of more recent versions of cited documents, may be authorized by, the responsible SMA Technical Authority (TA)
+Some documents, are listed as, an authority document or reference
+Some documents, are called out as, either a reference or authority in the citations found within the text
+Compliance with the requirements contained in this directive, is continuously monitored by, the SMA TA
+Compliance, may be verified by, assessments reviews and audits of the requirements and processes defined within this directive
+Chapter 6, is cancelled by, this directive
+Appendix D, is cancelled by, this directive
+NPI 8715.93, is cancelled by, this directive
 This directive, implements, Federal requirements under NSPM-20
-NSPM-20, is dated, August 20, 2019
+NSPM-20, is, Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems
+NSPM-20, is dated, August 20 2019
 NSPM-20, updates, the Federal process for the launch of SNS
-NSPM-20, ensures, a rigorous, risk informed safety analysis and launch authorization process
-This directive, incorporates, NASA’s responsibilities under the authorities of other agencies
-Other agencies, are involved, in the launch of SNS or radioactive material
+NSPM-20, ensures, a rigorous risk informed safety analysis and launch authorization process
+This directive, incorporates, NASA’s responsibilities under the authorities of other agencies involved in the launch of SNS or radioactive material
 This directive, incorporates, the National Response Framework
 This directive, incorporates, the U.S.’s international commitments
-Procedures and levels of review and analysis, are required, for nuclear launch and reentry authorization or concurrence
-Procedures and levels of review and analysis, vary, with the quantity and form of material planned for use
-Procedures and levels of review and analysis, vary, with the potential radiological risk
+Procedures and levels of review and analysis required for nuclear launch and reentry authorization or concurrence, vary with, the quantity and form of material planned for use
+Procedures and levels of review and analysis required for nuclear launch and reentry authorization or concurrence, vary with, the potential radiological risk
 Potential radiological risk, includes, human health exposures
 Potential radiological risk, includes, impacts on land use
 Potential radiological risk, includes, impacts on property use
-Reentry or planned return to Earth, refers, to intended portions of the spaceflight
-Reentry or planned return to Earth, is addressed, in the authorization or concurrence process
-Unplanned reentry, refers, to an unintended event
-Unplanned reentry, is addressed, in the safety analysis and RCP processes
+Reentry or planned return to Earth, refers to, intended portions of the spaceflight
+Reentry or planned return to Earth, is addressed in, the authorization or concurrence process
+Unplanned reentry, refers to, an unintended event
+Unplanned reentry, is addressed in, the safety analysis and RCP processes
 Responsibilities and requirements, may be delegated, unless specifically prohibited
-The stated role or actor, remains accountable, for its implementation and outcome
-The Official in Charge of that office or organization, is responsible, for the action and its outcome
-The Official in Charge of that office or organization, is accountable, for the action and its outcome
+The stated role or actor, remains accountable for, its implementation and outcome
+The Official in Charge of that office or organization, is responsible and accountable for, the action and its outcome
 

@@ -1,0 +1,172 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Document a owl:Class .
+:Page a owl:Class .
+:Date a owl:Class .
+:Compliance a owl:Class .
+:Employee a owl:Class .
+:Safety a owl:Class .
+:Office a owl:Class .
+:TableOfContents a owl:Class .
+:Preface a owl:Class .
+:Chapter a owl:Class .
+:Appendix a owl:Class .
+:Purpose a owl:Class .
+:Applicability a owl:Class .
+:Authority a owl:Class .
+:DocumentsAndForms a owl:Class .
+:MeasurementVerification a owl:Class .
+:Cancellation a owl:Class .
+:Introduction a owl:Class .
+:DelegationOfResponsibilities a owl:Class .
+:GeneralTerms a owl:Class .
+:RequestForRelief a owl:Class .
+:Administrator a owl:Class .
+:MissionDirectorateAssociateAdministrators a owl:Class .
+:NASAProgramAndProjectManagers a owl:Class .
+:OfficeOfInternationalAndInteragencyRelations a owl:Class .
+:OfficeOfProtectiveServices a owl:Class .
+:CenterDirectors a owl:Class .
+:CenterRadiationSafetyOfficer a owl:Class .
+:Chief a owl:Class .
+:NuclearFlightSafetyOfficer a owl:Class .
+:NASAINSRBRepresentative a owl:Class .
+:ChiefHealthAndMedicalOfficer a owl:Class .
+:SpaceNuclearSystemTiering a owl:Class .
+:CategorizationForOtherMissionsWithRadioactiveMaterial a owl:Class .
+:OtherForeseenCircumstances a owl:Class .
+:OverviewOfRequirementCharacterization a owl:Class .
+:NuclearSafetyAnalysis a owl:Class .
+:NuclearSafetyReview a owl:Class .
+:LaunchAndReentryAuthorizationOrConcurrence a owl:Class .
+:ContingencyPlanningAndCoordination a owl:Class .
+:LifeCycleActivitiesRelevantAfterLaunchAuthorization a owl:Class .
+:InternalAndExternalReporting a owl:Class .
+:Definitions a owl:Class .
+:Acronyms a owl:Class .
+:AdditionalInformationRegardingNSPM20AndNuclearFlightSafety a owl:Class .
+:CalculationOfTheA2MissionMultiple a owl:Class .
+:NotionalProcessFlowOfNuclearFlightSafetyRelatedActivitiesForSNSMissions a owl:Class .
+:RadioactiveMaterialsOnBoardReport a owl:Class .
+:References a owl:Class .
+:Public a owl:Class .
+:Library a owl:Class .
+:RolesAndResponsibilities a owl:Class .
+:Requirements a owl:Class .
+:Policy a owl:Class .
+:Implementation a owl:Class .
+:FederalRequirements a owl:Class .
+:Framework a owl:Class .
+:Headquarters a owl:Class .
+:Centers a owl:Class .
+:JetPropulsionLaboratory a owl:Class .
+:Activities a owl:Class .
+:Flight a owl:Class .
+:NuclearSafety a owl:Class .
+:RadiologicalRisk a owl:Class .
+:PhasesOfFlight a owl:Class .
+:Procedures a owl:Class .
+:RequirementsOrLicensingDetails a owl:Class .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Page .
+
+:expires a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Date .
+
+:isAbout a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Safety .
+
+:has a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :TableOfContents .
+
+:includes a owl:ObjectProperty ;
+    rdfs:domain :TableOfContents ;
+    rdfs:range :Preface, :Chapter, :Appendix .
+
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :RolesAndResponsibilities .
+
+:provides a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Requirements .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Implementation .
+
+:establishes a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Framework .
+
+:isApplicable a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Headquarters, :Centers, :Activities .
+
+:applies a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :JetPropulsionLaboratory .
+
+:considers a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :NuclearSafety, :RadiologicalRisk .
+
+:doesNotAddress a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Procedures, :RequirementsOrLicensingDetails .
+
+:doesNotBind a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Public .
+
+:isUncontrolled a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Library .
+
+:toVerify a owl:ObjectProperty ;
+    rdfs:domain :Check ;
+    rdfs:range :Library .
+
+:isMandatory a owl:ObjectProperty ;
+    rdfs:domain :Compliance ;
+    rdfs:range :Employee .
+
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :RolesAndResponsibilities .
+
+:provides a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Requirements .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Implementation .
+
+:establishes a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Framework .
+
+:isApplicable a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Headquarters, :Centers, :Activities .
+
+:applies a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :JetPropulsionLaboratory .
+
+:considers a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :NuclearSafety, :RadiologicalRisk .
+
+:doesNotAddress a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Procedures, :RequirementsOrLicensingDetails .
+
+

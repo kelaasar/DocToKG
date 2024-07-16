@@ -1,0 +1,60 @@
+@prefix : <http://terminology#> .
+@prefix assertions: <http://assertions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+assertions:thisDirective a :Directive ;
+    :defines assertions:rolesAndResponsibilities ;
+    :provides assertions:theRequirements ;
+    :describes assertions:NASAsImplementationOfFederalRequirements ;
+    :establishes assertions:aFramework .
+
+assertions:rolesAndResponsibilities a :RoleAndResponsibility ;
+    :areFor assertions:NASAsNuclearFlightSafetyActivities .
+
+assertions:NASAsNuclearFlightSafetyActivities a :Activity .
+
+assertions:theRequirements a :Requirement ;
+    :isToImplement assertions:NASAsPolicy .
+
+assertions:NASAsPolicy a :Policy ;
+    :isToProtect assertions:thePublic, assertions:NASAWorkforce, assertions:highValueEquipmentAndProperty, assertions:theEnvironment .
+
+assertions:thePublic a :Entity .
+assertions:NASAWorkforce a :Entity .
+assertions:highValueEquipmentAndProperty a :Entity .
+assertions:theEnvironment a :Entity .
+
+assertions:NASAActivitiesAndOperations a :Activity ;
+    :factor assertions:safety .
+
+assertions:safety a :Safety ;
+    :isAnIntegralFeatureOf assertions:programs, assertions:projects, assertions:technologies, assertions:operations, assertions:facilities .
+
+assertions:programs a :Activity .
+assertions:projects a :Activity .
+assertions:technologies a :Activity .
+assertions:operations a :Activity .
+assertions:facilities a :Activity .
+
+assertions:NASAsImplementationOfFederalRequirements a :Implementation ;
+    :isUnder assertions:NSPM20Date .
+
+assertions:NSPM20Date a :Date .
+
+assertions:aFramework a :Framework ;
+    :allows assertions:implementationOfOtherRequirementsGuidanceAndProcesses .
+
+assertions:implementationOfOtherRequirementsGuidanceAndProcesses a :Implementation .
+
+assertions:otherRequirementsGuidanceAndProcesses a :Process ;
+    :areRelevantTo assertions:nuclearFlightSafety .
+
+assertions:nuclearFlightSafety a :Activity .
+
+### NSPM-20 Date Individual
+assertions:NSPM20Date rdf:type :Date ;
+    rdf:value "August 20, 2019"^^xsd:date .
