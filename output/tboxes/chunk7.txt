@@ -1,0 +1,131 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:PresidentialMemorandum a owl:Class .
+:FederalProcess a owl:Class .
+:Directive a owl:Class .
+:Requirement a owl:Class .
+:Responsibility a owl:Class .
+:Agency a owl:Class .
+:Material a owl:Class .
+:Risk a owl:Class .
+:Exposure a owl:Class .
+:Impact a owl:Class .
+:Reentry a owl:Class .
+:Event a owl:Class .
+:Process a owl:Class .
+:Role a owl:Class .
+:Actor a owl:Class .
+:Office a owl:Class .
+:Official a owl:Class .
+:Action a owl:Class .
+:Outcome a owl:Class .
+:Term a owl:Class .
+:Information a owl:Class .
+:Authority a owl:Class .
+:Request a owl:Class .
+:NonConformance a owl:Class .
+:Administrator a owl:Class .
+:Policy a owl:Class .
+:Consent a owl:Class .
+:Safety a owl:Class .
+:PropertyRisk a owl:Class .
+:GeneralPublic a owl:Class .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :PresidentialMemorandum ;
+    rdfs:range :Directive .
+
+:isDated a owl:ObjectProperty ;
+    rdfs:domain :PresidentialMemorandum ;
+    rdfs:range xsd:date .
+
+:updates a owl:ObjectProperty ;
+    rdfs:domain :PresidentialMemorandum ;
+    rdfs:range :FederalProcess .
+
+:ensures a owl:ObjectProperty ;
+    rdfs:domain :FederalProcess ;
+    rdfs:range :Process .
+
+:implements a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Requirement .
+
+:incorporates a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Responsibility .
+
+:areUnder a owl:ObjectProperty ;
+    rdfs:domain :Responsibility ;
+    rdfs:range :Agency .
+
+:areInvolvedIn a owl:ObjectProperty ;
+    rdfs:domain :Agency ;
+    rdfs:range :Process .
+
+:varyWith a owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Material .
+
+:includes a owl:ObjectProperty ;
+    rdfs:domain :Risk ;
+    rdfs:range :Exposure, :Impact .
+
+:refersTo a owl:ObjectProperty ;
+    rdfs:domain :Reentry ;
+    rdfs:range :Event .
+
+:isAddressedIn a owl:ObjectProperty ;
+    rdfs:domain :Reentry ;
+    rdfs:range :Process .
+
+:mayBeDelegated a owl:ObjectProperty ;
+    rdfs:domain :Responsibility ;
+    rdfs:range :Role .
+
+:remainsAccountableFor a owl:ObjectProperty ;
+    rdfs:domain :Role ;
+    rdfs:range :Outcome .
+
+:isStatedAs a owl:ObjectProperty ;
+    rdfs:domain :Office ;
+    rdfs:range :Actor .
+
+:isResponsibleFor a owl:ObjectProperty ;
+    rdfs:domain :Official ;
+    rdfs:range :Action .
+
+:isAccountableFor a owl:ObjectProperty ;
+    rdfs:domain :Official ;
+    rdfs:range :Outcome .
+
+:areProvidedIn a owl:ObjectProperty ;
+    rdfs:domain :Term ;
+    rdfs:range :Information .
+
+:see a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Directive .
+
+:isApprovingAuthorityFor a owl:ObjectProperty ;
+    rdfs:domain :Authority ;
+    rdfs:range :Request .
+
+:willBeElevatedTo a owl:ObjectProperty ;
+    rdfs:domain :NonConformance ;
+    rdfs:range :Administrator .
+
+:makeDeterminationsInConsiderationOf a owl:ObjectProperty ;
+    rdfs:domain :Administrator ;
+    rdfs:range :Policy, :Responsibility .
+
+:areWithRegardsTo a owl:ObjectProperty ;
+    rdfs:domain :Responsibility ;
+    rdfs:range :Consent .
+
+:areOnBehalfOf a owl:ObjectProperty ;
+    rdfs:domain :Consent ;
+    rdfs:range :GeneralPublic .
+
+

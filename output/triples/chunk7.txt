@@ -1,0 +1,33 @@
+Step 1: Triples
+NSPM-20, is, Presidential Memorandum
+NSPM-20, is dated, August 20, 2019
+NSPM-20, updates, Federal process for the launch of SNS
+Federal process for the launch of SNS, ensures, rigorous risk informed safety analysis and launch authorization process
+This directive, implements, Federal requirements under NSPM-20
+This directive, incorporates, NASA’s responsibilities
+NASA’s responsibilities, are under, authorities of other agencies
+Other agencies, are involved in, launch of SNS or radioactive material
+Other agencies, are involved in, National Response Framework
+Other agencies, are involved in, U.S.’s international commitments
+Procedures and levels of review and analysis, vary with, quantity and form of material planned for use
+Procedures and levels of review and analysis, vary with, potential radiological risk
+Potential radiological risk, includes, human health exposures
+Potential radiological risk, includes, impacts on land use
+Potential radiological risk, includes, impacts on property use
+Reentry or planned return to Earth, refers to, intended portions of the spaceflight
+Reentry or planned return to Earth, is addressed in, authorization or concurrence process
+Unplanned reentry, refers to, unintended event
+Unplanned reentry, is addressed in, safety analysis and RCP processes
+Responsibilities and requirements, may be delegated, unless specifically prohibited
+Stated role or actor, remains accountable for, implementation and outcome
+Office or organization, is stated as, actor of a requirement
+Official in Charge, is responsible for, action and its outcome
+Official in Charge, is accountable for, action and its outcome
+Definitions for general terms, are provided in, Appendix A
+For additional information, see, NPR 8715.3
+Chief, SMA, is Approving Authority for, requests for relief to the requirements in this directive
+Non-conformances with Federal nuclear launch authorization direction, will be elevated to, Administrator
+Administrator, Chief, SMA, and Chief Health and Medical Officer, make determinations in consideration of, applicable National Space Policy
+Administrator, Chief, SMA, and Chief Health and Medical Officer, make determinations in consideration of, responsibilities defined in NPD 8700.1
+Responsibilities defined in NPD 8700.1, are with regards to, consent to human safety and property risk on behalf of the general public
+

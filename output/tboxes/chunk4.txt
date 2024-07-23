@@ -1,0 +1,53 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Directive a owl:Class .
+:Action a owl:Class .
+:Term a owl:Class .
+:Conflict a owl:Class .
+:Document a owl:Class .
+:Information a owl:Class .
+:Provision a owl:Class .
+:FederalStatute a owl:Class .
+:HigherLevelDirective a owl:Class .
+:Version a owl:Class .
+:Authority a owl:Class .
+:Reference a owl:Class .
+
+:does_not_cover a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Action .
+
+:does_not_serve a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Action .
+
+:see a owl:ObjectProperty ;
+    rdfs:domain :Information ;
+    rdfs:range :Document .
+
+:are_denoted_by a owl:ObjectProperty ;
+    rdfs:domain :Action ;
+    rdfs:range :Term .
+
+:denotes a owl:ObjectProperty ;
+    rdfs:domain :Term ;
+    rdfs:range :Action .
+
+:take_precedence a owl:ObjectProperty ;
+    rdfs:domain :Conflict ;
+    rdfs:range :FederalStatute, :HigherLevelDirective .
+
+:are_assumed_to_be a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Version .
+
+:may_be_authorized_by a owl:ObjectProperty ;
+    rdfs:domain :Version ;
+    rdfs:range :Authority .
+
+:are_called_out_as a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Reference, :Authority .
+
+

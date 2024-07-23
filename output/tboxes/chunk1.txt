@@ -1,198 +1,41 @@
 Step 2: T-Box
 @prefix : <http://terminology#> .
 
-:Directive a owl:Class .
+:Document a owl:Class .
 :Public a owl:Class .
-:NASA_Online_Directives_Information_System a owl:Class .
-:Shipping a owl:Class .
-:Handling a owl:Class .
-:Ground_Processing_Facilities a owl:Class .
-:Activities a owl:Class .
-:Preparation a owl:Class .
-:Radioactive_Material a owl:Class .
-:Space_Use a owl:Class .
-:Information a owl:Class .
-:NEPA_Compliance a owl:Class .
-:NEPA_Analysis a owl:Class .
-:Safety_Data a owl:Class .
-:Mandatory_Actions a owl:Class .
-:Statements a owl:Class .
-:Discretionary_Privilege a owl:Class .
-:Possibility a owl:Class .
-:Capability a owl:Class .
-:Good_Practice a owl:Class .
-:Expected_Outcome a owl:Class .
-:Descriptive_Material a owl:Class .
-:Conflicts a owl:Class .
-:Provisions a owl:Class .
-:Federal_Statutes a owl:Class .
-:Regulations a owl:Class .
-:Higher_Level_NASA_Directives a owl:Class .
-:Document_Citations a owl:Class .
-:Versions a owl:Class .
-:Responsible_SMA_Technical_Authority a owl:Class .
-:Authority_Document a owl:Class .
-:Reference a owl:Class .
-:Compliance a owl:Class .
-:Requirements a owl:Class .
-:Assessments a owl:Class .
-:Reviews a owl:Class .
-:Audits a owl:Class .
-:Chapter_6 a owl:Class .
-:Appendix_D a owl:Class .
-:NPI_8715_93 a owl:Class .
-:Federal_Requirements a owl:Class .
-:NSPM_20 a owl:Class .
-:Presidential_Memorandum a owl:Class .
-:Federal_Process a owl:Class .
-:Rigorous_Risk_Informed_Safety_Analysis a owl:Class .
-:Launch_Authorization_Process a owl:Class .
-:NASA_Responsibilities a owl:Class .
-:National_Response_Framework a owl:Class .
-:International_Commitments a owl:Class .
-:Procedures a owl:Class .
-:Levels_of_Review_and_Analysis a owl:Class .
-:Nuclear_Launch_and_Reentry_Authorization a owl:Class .
-:Quantity_and_Form_of_Material a owl:Class .
-:Potential_Radiological_Risk a owl:Class .
-:Human_Health_Exposures a owl:Class .
-:Impacts_on_Land_Use a owl:Class .
-:Impacts_on_Property_Use a owl:Class .
-:Reentry_or_Planned_Return_to_Earth a owl:Class .
-:Intended_Portions_of_Spaceflight a owl:Class .
-:Authorization_or_Concurrence_Process a owl:Class .
-:Unplanned_Reentry a owl:Class .
-:Unintended_Event a owl:Class .
-:Safety_Analysis a owl:Class .
-:RCP_Processes a owl:Class .
-:Responsibilities_and_Requirements a owl:Class .
-:Stated_Role_or_Actor a owl:Class .
-:Implementation_and_Outcome a owl:Class .
-:Official_in_Charge a owl:Class .
-:Action_and_Outcome a owl:Class .
+:Law a owl:Class .
+:Contract a owl:Class .
+:Printed a owl:Class .
+:NASA_Online_Directives_Information_System_Library a owl:Class .
+:Version a owl:Class .
+:Use a owl:Class .
 
 :does_not_bind a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
+    rdfs:domain :Document ;
     rdfs:range :Public .
 
-:is a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :Uncontrolled_when_printed .
+:is_authorized_by a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Law .
 
-:to_verify_that_this_is_the_correct_version_before_use a owl:ObjectProperty ;
-    rdfs:domain :Check ;
-    rdfs:range :NASA_Online_Directives_Information_System .
+:is_incorporated_into a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Contract .
 
-:does_not_cover a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :Shipping, :Handling, :Ground_Processing_Facilities, :Activities, :Preparation, :Radioactive_Material, :Space_Use .
+:is_uncontrolled a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Printed .
 
-:for_additional_information_on_these_matters a owl:ObjectProperty ;
-    rdfs:domain :See ;
-    rdfs:range :NPR_1800_1, :Center_specific_Radiation_Protection_Program_requirements_and_procedures, :Relevant_documents_from_the_licensing_or_authorizing_agency .
-
-:does_not_serve a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :NEPA_Compliance, :NEPA_Analysis, :Safety_Data .
-
-:for_additional_information_on_NEPA_matters a owl:ObjectProperty ;
-    rdfs:domain :See ;
-    rdfs:range :NPR_8580_1 .
-
-:are_denoted_by a owl:ObjectProperty ;
-    rdfs:domain :Mandatory_Actions ;
-    rdfs:range :Statements .
-
-:denotes a owl:ObjectProperty ;
-    rdfs:domain :The_term_may, :The_term_can, :The_term_should, :The_term_will, :The_term_are_is ;
-    rdfs:range :Discretionary_Privilege, :Possibility, :Capability, :Good_Practice, :Expected_Outcome, :Descriptive_Material .
-
-:exist_between a owl:ObjectProperty ;
-    rdfs:domain :Conflicts ;
-    rdfs:range :Provisions, :Federal_Statutes, :Regulations, :Higher_Level_NASA_Directives .
-
-:take_precedence_over a owl:ObjectProperty ;
-    rdfs:domain :Statutes, :Regulations, :Higher_Level_NASA_Directives ;
-    rdfs:range :Provisions .
-
-:are_assumed_to_be a owl:ObjectProperty ;
-    rdfs:domain :All_document_citations ;
-    rdfs:range :Versions .
-
-:may_be_authorized_by a owl:ObjectProperty ;
-    rdfs:domain :Use_of_more_recent_versions_of_cited_documents ;
-    rdfs:range :Responsible_SMA_Technical_Authority .
-
-:are_listed_as a owl:ObjectProperty ;
-    rdfs:domain :Some_documents ;
-    rdfs:range :Authority_Document, :Reference .
-
-:are_called_out_as a owl:ObjectProperty ;
-    rdfs:domain :Some_documents ;
-    rdfs:range :Reference, :Authority .
-
-:is_continuously_monitored_by a owl:ObjectProperty ;
-    rdfs:domain :Compliance_with_the_requirements_contained_in_this_directive ;
-    rdfs:range :SMA_TA .
-
-:may_be_verified_by a owl:ObjectProperty ;
-    rdfs:domain :Compliance ;
-    rdfs:range :Assessments, :Reviews, :Audits .
-
-:is_cancelled_by a owl:ObjectProperty ;
-    rdfs:domain :Chapter_6, :Appendix_D, :NPI_8715_93 ;
-    rdfs:range :Directive .
-
-:implements a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :Federal_Requirements .
+:to_verify a owl:ObjectProperty ;
+    rdfs:domain :NASA_Online_Directives_Information_System_Library ;
+    rdfs:range :Version .
 
 :is a owl:ObjectProperty ;
-    rdfs:domain :NSPM_20 ;
-    rdfs:range :Presidential_Memorandum .
+    rdfs:domain :Document ;
+    rdfs:range :Version .
 
-:is_dated a owl:ObjectProperty ;
-    rdfs:domain :NSPM_20 ;
-    rdfs:range :August_20_2019 .
-
-:updates a owl:ObjectProperty ;
-    rdfs:domain :NSPM_20 ;
-    rdfs:range :Federal_Process .
-
-:ensures a owl:ObjectProperty ;
-    rdfs:domain :NSPM_20 ;
-    rdfs:range :Rigorous_Risk_Informed_Safety_Analysis, :Launch_Authorization_Process .
-
-:incorporates a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :NASA_Responsibilities, :National_Response_Framework, :International_Commitments .
-
-:vary_with a owl:ObjectProperty ;
-    rdfs:domain :Procedures, :Levels_of_Review_and_Analysis ;
-    rdfs:range :Quantity_and_Form_of_Material, :Potential_Radiological_Risk .
-
-:includes a owl:ObjectProperty ;
-    rdfs:domain :Potential_Radiological_Risk ;
-    rdfs:range :Human_Health_Exposures, :Impacts_on_Land_Use, :Impacts_on_Property_Use .
-
-:refers_to a owl:ObjectProperty ;
-    rdfs:domain :Reentry_or_Planned_Return_to_Earth, :Unplanned_Reentry ;
-    rdfs:range :Intended_Portions_of_Spaceflight, :Unintended_Event .
-
-:is_addressed_in a owl:ObjectProperty ;
-    rdfs:domain :Reentry_or_Planned_Return_to_Earth, :Unplanned_Reentry ;
-    rdfs:range :Authorization_or_Concurrence_Process, :Safety_Analysis, :RCP_Processes .
-
-:may_be_delegated a owl:ObjectProperty ;
-    rdfs:domain :Responsibilities_and_Requirements ;
-    rdfs:range :Unless_specifically_prohibited .
-
-:remains_accountable_for a owl:ObjectProperty ;
-    rdfs:domain :The_stated_role_or_actor ;
-    rdfs:range :Implementation_and_Outcome .
-
-:is_responsible_and_accountable_for a owl:ObjectProperty ;
-    rdfs:domain :Official_in_Charge ;
-    rdfs:range :Action_and_Outcome .
+:is_before_use a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Use .
 
 

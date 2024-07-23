@@ -1,54 +1,9 @@
 Step 1: Triples
-This directive, does not bind, the public
-This directive, is, uncontrolled when printed
-Check, the NASA Online Directives Information System (NODIS) Library, to verify that this is the correct version before use
-This directive, does not cover, shipping or handling radioactive materials in ground processing facilities or activities
-This directive, does not cover, preparation of the actual radioactive material for space use
-See, NPR 1800.1, for additional information on these matters
-See, Center-specific Radiation Protection Program requirements and procedures, for additional information on these matters
-See, relevant documents from the licensing or authorizing agency, for additional information on these matters
-This directive, does not serve, to meet National Environmental Policy Act (NEPA) compliance
-This directive, does not serve, to govern the level of NEPA analysis required for a mission
-This directive, does not serve, to govern if there is sufficient safety data to make NEPA determinations
-See, NPR 8580.1, for additional information on NEPA matters
-All mandatory actions, are denoted by, statements containing the term “shall”
-The term “may”, denotes, a discretionary privilege or permission
-The term “can”, denotes, statements of possibility or capability
-The term “should”, denotes, a good practice and is recommended but not required
-The term “will”, denotes, expected outcome
-The term “are/is”, denotes, descriptive material
-Conflicts, exist between, provisions of this directive and Federal statutes or regulations
-Conflicts, exist between, provisions of this directive and higher-level NASA directives
-Statutes, take precedence over, provisions of this directive
-Regulations, take precedence over, provisions of this directive
-Higher-level NASA directives, take precedence over, provisions of this directive
-All document citations, are assumed to be, the latest version unless otherwise noted
-Use of more recent versions of cited documents, may be authorized by, the responsible SMA Technical Authority (TA)
-Some documents, are listed as, an authority document or reference
-Some documents, are called out as, either a reference or authority in the citations found within the text
-Compliance with the requirements contained in this directive, is continuously monitored by, the SMA TA
-Compliance, may be verified by, assessments reviews and audits of the requirements and processes defined within this directive
-Chapter 6, is cancelled by, this directive
-Appendix D, is cancelled by, this directive
-NPI 8715.93, is cancelled by, this directive
-This directive, implements, Federal requirements under NSPM-20
-NSPM-20, is, Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems
-NSPM-20, is dated, August 20 2019
-NSPM-20, updates, the Federal process for the launch of SNS
-NSPM-20, ensures, a rigorous risk informed safety analysis and launch authorization process
-This directive, incorporates, NASA’s responsibilities under the authorities of other agencies involved in the launch of SNS or radioactive material
-This directive, incorporates, the National Response Framework
-This directive, incorporates, the U.S.’s international commitments
-Procedures and levels of review and analysis required for nuclear launch and reentry authorization or concurrence, vary with, the quantity and form of material planned for use
-Procedures and levels of review and analysis required for nuclear launch and reentry authorization or concurrence, vary with, the potential radiological risk
-Potential radiological risk, includes, human health exposures
-Potential radiological risk, includes, impacts on land use
-Potential radiological risk, includes, impacts on property use
-Reentry or planned return to Earth, refers to, intended portions of the spaceflight
-Reentry or planned return to Earth, is addressed in, the authorization or concurrence process
-Unplanned reentry, refers to, an unintended event
-Unplanned reentry, is addressed in, the safety analysis and RCP processes
-Responsibilities and requirements, may be delegated, unless specifically prohibited
-The stated role or actor, remains accountable for, its implementation and outcome
-The Official in Charge of that office or organization, is responsible and accountable for, the action and its outcome
+This document, does not bind, the public
+This document, is authorized by, law
+This document, is incorporated into, a contract
+This document, is uncontrolled, when printed
+Check, the NASA Online Directives Information System (NODIS) Library, to verify
+This, is, the correct version
+This document, is before use, https://nodis3.gsfc.nasa.gov
 

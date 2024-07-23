@@ -1,0 +1,19 @@
+Step 1: Triples
+NPD 1000.3, is, The NASA Organization
+NPD 8700.1, is, NASA Policy for Safety and Mission Success
+NSPM-20, is, National Security Presidential Memorandum on the Launch of Spacecraft Containing Space Nuclear Systems
+NPR 7120.5, is, NASA Space Flight Program and Project Management Requirements
+NPR 8715.5, is, NASA Range Flight Safety Program
+NPR 8715.7, is, NASA Payload Safety Program
+NASA-STD-8719.24, is, NASA Payload Safety Requirements
+NASA-STD-8719.25, is, Range Flight Safety Requirements
+Nuclear/Radiological Incident Annex, is, Response and Recovery Federal Interagency Operational Plans
+Compliance, is monitored by, the SMA TA
+Compliance, may be verified as part of, selected life cycle reviews
+Compliance, may be verified by, assessments
+Compliance, may be verified by, reviews
+Compliance, may be verified by, audits of the requirements and processes defined within this directive
+This document, does not bind, the public
+This document, is uncontrolled when, printed
+Check, the NASA Online Directives Information System (NODIS) Library, to verify that this is the correct version before use
+

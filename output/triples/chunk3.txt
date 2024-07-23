@@ -1,0 +1,44 @@
+Step 1: Triples
+This directive, is applicable to, NASA Headquarters
+This directive, is applicable to, NASA Centers
+This directive, is applicable to, Component Facilities
+This directive, is applicable to, Technical and Service Support Centers
+This directive, applies to, Jet Propulsion Laboratory
+Jet Propulsion Laboratory, is, a Federally-Funded Research and Development Center
+This directive, applies to, other contractors
+This directive, applies to, recipients of grants
+This directive, applies to, recipients of cooperative agreements
+This directive, applies to, recipients of other agreements
+This directive, applies to, the extent specified or referenced in the applicable contracts
+This directive, applies to, the extent specified or referenced in the applicable grants
+This directive, applies to, the extent specified or referenced in the applicable agreements
+This directive, is applicable to, activities involving flight of SNS
+This directive, is applicable to, activities involving other radioactive material
+NASA, is, the sponsoring agency
+Activities, involve, the use of NASA personnel
+Activities, involve, the use of NASA assets
+SNS, has the potential to affect, Earth’s biosphere
+Other radioactive material, has the potential to affect, Earth’s biosphere
+Aspects of the NASA nuclear flight safety program, may fall under, the auspices of another Federal agency
+FAA, issues, license for the launch of NASA-provided radioactive material
+NASA personnel, will consult with, the Nuclear Flight Safety Officer
+NASA personnel, will consult with, the Office of the General Counsel
+NASA personnel, confirm, responsibilities for nuclear flight safety
+This directive, considers, nuclear safety
+This directive, considers, radiological risk
+Nuclear safety and radiological risk, are from, normal conditions
+Nuclear safety and radiological risk, are from, off-normal conditions
+Nuclear safety and radiological risk, are during, all phases of flight
+SNS, has the potential to affect, Earth’s biosphere
+Other radioactive material, has the potential to affect, Earth’s biosphere
+Phases of flight, start with, installation of the SNS
+Phases of flight, start with, installation of other radioactive material
+Installation, is into, an integrated launch vehicle on Earth
+Matters, are addressed by, other NASA disciplines
+Other NASA disciplines, are, planetary protection
+Other NASA disciplines, are, crew safety
+This directive, does not address, procedures
+This directive, does not address, requirements
+This directive, does not address, licensing details for using
+This directive, does not address, licensing details for storing
+

@@ -1,0 +1,37 @@
+Step 1: Triples
+This directive, defines, the roles and responsibilities
+The roles and responsibilities, are for, managing and overseeing NASA's nuclear flight safety activities
+This directive, provides, the requirements
+The requirements, implement, NASA’s policy
+NASA’s policy, protects, the public
+NASA’s policy, protects, NASA workforce
+NASA’s policy, protects, high-value equipment and property
+NASA’s policy, protects, the environment
+NASA’s policy, factors, safety
+Safety, is, an integral feature of programs
+Safety, is, an integral feature of projects
+Safety, is, an integral feature of technologies
+Safety, is, an integral feature of operations
+Safety, is, an integral feature of facilities
+This directive, describes, NASA’s implementation of Federal requirements
+Federal requirements, are under, National Security Presidential Memorandum (NSPM)-20
+National Security Presidential Memorandum (NSPM)-20, is dated, August 20, 2019
+Radiological contingency planning (RCP), is a part of, broader NASA emergency management activities
+Broader NASA emergency management activities, are in, NPD 8710.1
+Broader NASA emergency management activities, are in, NPR 8715.2
+This directive, describes, agency-specific activities
+Agency-specific activities, relate to, ensuring safety and mission success
+NASA-sponsored payloads, contain, space nuclear systems (SNS)
+NASA-sponsored payloads, contain, other radioactive material
+These terms, are defined in, Appendix A
+This directive, establishes, a framework
+Other requirements, are relevant to, nuclear flight safety
+Guidance, is relevant to, nuclear flight safety
+Processes, are relevant to, nuclear flight safety
+Department of Energy (DOE) nuclear safety and security requirements, are relevant to, nuclear flight safety
+U.S. Air and Space Force range safety requirements, are relevant to, nuclear flight safety
+NASA payload safety processes, are relevant to, nuclear flight safety
+Other requirements, can be implemented in, overall Safety and Mission Assurance (SMA) process
+Guidance, can be implemented in, overall Safety and Mission Assurance (SMA) process
+Processes, can be implemented in, overall Safety and Mission Assurance (SMA) process
+

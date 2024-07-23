@@ -1,0 +1,109 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Directive a owl:Class .
+:Roles_and_Responsibilities a owl:Class .
+:Requirements a owl:Class .
+:Policy a owl:Class .
+:Public a owl:Class .
+:Workforce a owl:Class .
+:Equipment_and_Property a owl:Class .
+:Environment a owl:Class .
+:Safety a owl:Class .
+:Programs a owl:Class .
+:Projects a owl:Class .
+:Technologies a owl:Class .
+:Operations a owl:Class .
+:Facilities a owl:Class .
+:Federal_Requirements a owl:Class .
+:National_Security_Presidential_Memorandum a owl:Class .
+:Radiological_Contingency_Planning a owl:Class .
+:Emergency_Management_Activities a owl:Class .
+:Agency_Specific_Activities a owl:Class .
+:Safety_and_Mission_Success a owl:Class .
+:NASA_Sponsored_Payloads a owl:Class .
+:Space_Nuclear_Systems a owl:Class .
+:Radioactive_Material a owl:Class .
+:Appendix a owl:Class .
+:Framework a owl:Class .
+:Other_Requirements a owl:Class .
+:Guidance a owl:Class .
+:Processes a owl:Class .
+:DOE_Nuclear_Safety_and_Security_Requirements a owl:Class .
+:US_Air_and_Space_Force_Range_Safety_Requirements a owl:Class .
+:NASA_Payload_Safety_Processes a owl:Class .
+:Overall_Safety_and_Mission_Assurance_Process a owl:Class .
+
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Roles_and_Responsibilities .
+
+:are_for a owl:ObjectProperty ;
+    rdfs:domain :Roles_and_Responsibilities ;
+    rdfs:range :Managing_and_Overseeing_NASA_Nuclear_Flight_Safety_Activities .
+
+:provides a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Requirements .
+
+:implement a owl:ObjectProperty ;
+    rdfs:domain :Requirements ;
+    rdfs:range :Policy .
+
+:protects a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Public, :Workforce, :Equipment_and_Property, :Environment .
+
+:factors a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Safety .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Safety ;
+    rdfs:range :Programs, :Projects, :Technologies, :Operations, :Facilities .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Federal_Requirements, :Agency_Specific_Activities .
+
+:are_under a owl:ObjectProperty ;
+    rdfs:domain :Federal_Requirements ;
+    rdfs:range :National_Security_Presidential_Memorandum .
+
+:is_dated a owl:ObjectProperty ;
+    rdfs:domain :National_Security_Presidential_Memorandum ;
+    rdfs:range xsd:date .
+
+:is_a_part_of a owl:ObjectProperty ;
+    rdfs:domain :Radiological_Contingency_Planning ;
+    rdfs:range :Emergency_Management_Activities .
+
+:are_in a owl:ObjectProperty ;
+    rdfs:domain :Emergency_Management_Activities ;
+    rdfs:range :NPD_8710_1, :NPR_8715_2 .
+
+:relate_to a owl:ObjectProperty ;
+    rdfs:domain :Agency_Specific_Activities ;
+    rdfs:range :Safety_and_Mission_Success .
+
+:contain a owl:ObjectProperty ;
+    rdfs:domain :NASA_Sponsored_Payloads ;
+    rdfs:range :Space_Nuclear_Systems, :Radioactive_Material .
+
+:are_defined_in a owl:ObjectProperty ;
+    rdfs:domain :Terms ;
+    rdfs:range :Appendix .
+
+:establishes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Framework .
+
+:are_relevant_to a owl:ObjectProperty ;
+    rdfs:domain :Other_Requirements, :Guidance, :Processes, :DOE_Nuclear_Safety_and_Security_Requirements, :US_Air_and_Space_Force_Range_Safety_Requirements, :NASA_Payload_Safety_Processes ;
+    rdfs:range :Nuclear_Flight_Safety .
+
+:can_be_implemented_in a owl:ObjectProperty ;
+    rdfs:domain :Other_Requirements, :Guidance, :Processes ;
+    rdfs:range :Overall_Safety_and_Mission_Assurance_Process .
+
+

@@ -1,73 +1,43 @@
 Step 1: Triples
 NPR 8715.26, is, TOC Page 1 of 35
-NPR 8715.26, is, TOC Page 2 of 35
-NPR 8715.26, is, Preface Page 3 of 35
-NPR 8715.26, is, effective February 03, 2022
-NPR 8715.26, expires, February 03, 2027
-Compliance, is mandatory, for NASA employees
-NPR 8715.26, is about, Nuclear Flight Safety
-Responsible Office, is, Office of Safety and Mission Assurance
+NPR 8715.26, is in, NODIS Library
+NPR 8715.26, is in, Program Management(8000s)
+NPR 8715.26, is for, Search
+NASA NPR 8715.26, has Effective Date, February 03
+NASA NPR 8715.26, has Expiration Date, February 03
+NASA NPR 8715.26, has Procedural Requirements, 2022
+NASA NPR 8715.26, has Expiration Date, 2027
+COMPLIANCE, IS MANDATORY FOR, NASA EMPLOYEES
+Nuclear Flight Safety, is the responsibility of, Office of Safety and Mission Assurance
 NPR 8715.26, has, Table of Contents
-Table of Contents, includes, Preface
-Table of Contents, includes, Chapter 1
-Table of Contents, includes, Chapter 2
-Table of Contents, includes, Chapter 3
-Table of Contents, includes, Chapter 4
-Table of Contents, includes, Appendix A
-Table of Contents, includes, Appendix B
-Table of Contents, includes, Appendix C
-Table of Contents, includes, Appendix D
-Table of Contents, includes, Appendix E
-Table of Contents, includes, Appendix F
-Table of Contents, includes, Appendix G
-Preface, includes, P.1 Purpose
-Preface, includes, P.2 Applicability
-Preface, includes, P.3 Authority
-Preface, includes, P.4 Applicable Documents and Forms
-Preface, includes, P.5 Measurement/Verification
-Preface, includes, P.6 Cancellation
-Chapter 1, includes, 1.1 Introduction
-Chapter 1, includes, 1.2 Delegation of Responsibilities
-Chapter 1, includes, 1.3 General Terms
-Chapter 1, includes, 1.4 Request for Relief
-Chapter 2, includes, 2.1 Administrator
-Chapter 2, includes, 2.2 Mission Directorate Associate Administrators
-Chapter 2, includes, 2.3 NASA Program and Project Managers
-Chapter 2, includes, 2.4 Office of International and Interagency Relations
-Chapter 2, includes, 2.5 Office of Protective Services
-Chapter 2, includes, 2.6 Center Directors
-Chapter 2, includes, 2.7 Center Radiation Safety Officer
-Chapter 2, includes, 2.8 Chief, Safety and Mission Assurance
-Chapter 2, includes, 2.9 Nuclear Flight Safety Officer
-Chapter 2, includes, 2.10 NASA INSRB Representative
-Chapter 2, includes, 2.11 Chief Health and Medical Officer
-Chapter 3, includes, 3.1 Space Nuclear System Tiering
-Chapter 3, includes, 3.2 Categorization for Other Missions with Radioactive Material
-Chapter 3, includes, 3.3 Other Foreseen Circumstances
-Chapter 4, includes, 4.1 Overview of Requirement Characterization
-Chapter 4, includes, 4.2 Nuclear Safety Analysis
-Chapter 4, includes, 4.3 Nuclear Safety Review
-Chapter 4, includes, 4.4 Launch and Reentry Authorization or Concurrence
-Chapter 4, includes, 4.5 Contingency Planning and Coordination
-Chapter 4, includes, 4.6 Life-Cycle Activities Relevant After Launch Authorization
-Chapter 4, includes, 4.7 Internal and External Reporting
-Appendix A, is, Definitions
-Appendix B, is, Acronyms
-Appendix C, is, Additional Information Regarding NSPM-20 and Nuclear Flight Safety
-Appendix D, is, Calculation of the A2 Mission Multiple
-Appendix E, is, Notional Process Flow of Nuclear Flight Safety-related Activities for SNS Missions
-Appendix F, is, Radioactive Materials On-Board Report
-Appendix G, is, References
+Table of Contents, has, Preface
+Preface, has, P.1 Purpose
+Preface, has, P.2 Applicability
+Preface, has, P.3 Authority
+Preface, has, P.4 Applicable Documents and Forms
+Preface, has, P.5 Measurement/Verification
+Preface, has, P.6 Cancellation
+Table of Contents, has, Chapter 1
+Chapter 1, has, Overview
+Overview, has, 1.1 Introduction
+Overview, has, 1.2 Delegation of Responsibilities
+Overview, has, 1.3 General Terms
+Overview, has, 1.4 Request for Relief
+Table of Contents, has, Chapter 2
+Chapter 2, has, Roles and Responsibilities
+Roles and Responsibilities, has, 2.1 Administrator
+Roles and Responsibilities, has, 2.2 Mission Directorate Associate Administrators
+Roles and Responsibilities, has, 2.3 NASA Program and Project Managers
+Roles and Responsibilities, has, 2.4 Office of International and Interagency Relations
+Roles and Responsibilities, has, 2.5 Office of Protective Services
+Roles and Responsibilities, has, 2.6 Center Directors
+Roles and Responsibilities, has, 2.7 Center Radiation Safety Officer
+Roles and Responsibilities, has, 2.8 Chief, Safety and Mission Assurance
+Roles and Responsibilities, has, 2.9 Nuclear Flight Safety Officer
+Roles and Responsibilities, has, 2.10 NASA INSRB Representative
 This document, does not bind, the public
-This document, is uncontrolled, when printed
+This document, is authorized by, law
+This document, is incorporated into, a contract
+This document, is uncontrolled when, printed
 Check, the NASA Online Directives Information System (NODIS) Library, to verify that this is the correct version before use
-This directive, defines, the roles and responsibilities for managing and overseeing NASA’s nuclear flight safety activities
-This directive, provides, the requirements to implement NASA’s policy to protect the public, NASA workforce, high-value equipment and property, and the environment from potential harm
-This directive, describes, NASA’s implementation of Federal requirements under National Security Presidential Memorandum (NSPM)-20
-This directive, establishes, a framework where other requirements, guidance, and processes relevant to nuclear flight safety can be implemented in to the overall Safety and Mission Assurance (SMA) process
-This directive, is applicable, to NASA Headquarters and NASA Centers
-This directive, applies, to the Jet Propulsion Laboratory
-This directive, is applicable, to activities involving flight of SNS or other radioactive material for which NASA is the sponsoring agency
-This directive, considers, nuclear safety and radiological risk from both normal and off-normal conditions during all phases of flight
-This directive, does not address, procedures, requirements, or licensing details for using, storing
 

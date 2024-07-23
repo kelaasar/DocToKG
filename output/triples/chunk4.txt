@@ -1,0 +1,23 @@
+Step 1: Triples
+This directive, does not cover, shipping radioactive materials in ground processing facilities
+This directive, does not cover, handling radioactive materials in ground processing facilities
+This directive, does not cover, these activities as they relate to preparation of the actual radioactive material for space use
+For additional information on these matters, see, NPR 1800.1
+For additional information on these matters, see, Center-specific Radiation Protection Program requirements and procedures
+For additional information on these matters, see, relevant documents from the licensing or authorizing agency
+This directive, does not serve, to meet National Environmental Policy Act (NEPA) compliance
+This directive, does not serve, to govern the level of NEPA analysis required for a mission
+This directive, does not serve, to govern if there is sufficient safety data to make NEPA determinations
+For additional information on NEPA matters, see, NPR 8580.1
+In this directive, all mandatory actions, are denoted by statements containing the term “shall”
+The term “may”, denotes, a discretionary privilege or permission
+The term “can”, denotes, statements of possibility or capability
+The term “should”, denotes, a good practice and is recommended but not required
+The term “will”, denotes, expected outcome
+The term “are/is”, denotes, descriptive material
+Where conflicts exist between provisions of this directive and Federal statutes or regulations, those statutes, take precedence
+Where conflicts exist between provisions of this directive and higher-level NASA directives, those higher-level NASA directives, take precedence
+In this directive, all document citations, are assumed to be the latest version unless otherwise noted
+Use of more recent versions of cited documents, may be authorized by the responsible SMA Technical Authority (TA)
+Some documents listed as an authority document or reference, are called out as either a reference or authority in the citations found within the text
+
