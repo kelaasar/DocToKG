@@ -1,16 +1,34 @@
-Step 2: T-Box
 @prefix : <http://terminology#> .
 
+:Document a owl:Class .
+:Policy a owl:Class .
+:Program a owl:Class .
+:Requirement a owl:Class .
+:Plan a owl:Class .
+:Compliance a owl:Class .
+:Public a owl:Class .
+:Library a owl:Class .
+:Review a owl:Class .
+:Assessment a owl:Class .
+:Audit a owl:Class .
+:Version a owl:Class .
+:Time a owl:Class .
+:Authority a owl:Class .
+:Chapter a owl:Class .
+:Appendix a owl:Class .
+:ProgramRequirement a owl:Class .
+:Impact a owl:Class .
+:Law a owl:Class .
+:Contract a owl:Class .
+:Date a owl:Class .
 :PresidentialMemorandum a owl:Class .
 :FederalProcess a owl:Class .
 :Directive a owl:Class .
-:Requirement a owl:Class .
 :Responsibility a owl:Class .
 :Agency a owl:Class .
 :Material a owl:Class .
 :Risk a owl:Class .
 :Exposure a owl:Class .
-:Impact a owl:Class .
 :Reentry a owl:Class .
 :Event a owl:Class .
 :Process a owl:Class .
@@ -22,23 +40,53 @@ Step 2: T-Box
 :Outcome a owl:Class .
 :Term a owl:Class .
 :Information a owl:Class .
-:Authority a owl:Class .
 :Request a owl:Class .
 :NonConformance a owl:Class .
 :Administrator a owl:Class .
-:Policy a owl:Class .
 :Consent a owl:Class .
 :Safety a owl:Class .
 :PropertyRisk a owl:Class .
 :GeneralPublic a owl:Class .
 
 :is a owl:ObjectProperty ;
-    rdfs:domain :PresidentialMemorandum ;
-    rdfs:range :Directive .
+    rdfs:domain :Document, :PresidentialMemorandum ;
+    rdfs:range :Policy, :Program, :Requirement, :Plan, :Chapter, :Appendix, :ProgramRequirement, :Impact, :Public, :Law, :Contract, :Library, :Directive .
 
-:isDated a owl:ObjectProperty ;
-    rdfs:domain :PresidentialMemorandum ;
-    rdfs:range xsd:date .
+:is_monitored_by a owl:ObjectProperty ;
+    rdfs:domain :Compliance ;
+    rdfs:range :Authority .
+
+:may_be_verified_as_part_of a owl:ObjectProperty ;
+    rdfs:domain :Compliance ;
+    rdfs:range :Review .
+
+:may_be_verified_by a owl:ObjectProperty ;
+    rdfs:domain :Compliance ;
+    rdfs:range :Assessment, :Review, :Audit .
+
+:does_not_bind a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Public .
+
+:is_uncontrolled_when a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Time, :Version .
+
+:to_verify_that_this_is_the_correct_version_before_use a owl:ObjectProperty ;
+    rdfs:domain :Check ;
+    rdfs:range :Library .
+
+:is_dated a owl:ObjectProperty ;
+    rdfs:domain :ProgramRequirement, :Impact, :PresidentialMemorandum ;
+    rdfs:range :Date, xsd:date .
+
+:is_authorized_by a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Law .
+
+:is_incorporated_into a owl:ObjectProperty ;
+    rdfs:domain :Document ;
+    rdfs:range :Contract .
 
 :updates a owl:ObjectProperty ;
     rdfs:domain :PresidentialMemorandum ;
@@ -127,5 +175,3 @@ Step 2: T-Box
 :areOnBehalfOf a owl:ObjectProperty ;
     rdfs:domain :Consent ;
     rdfs:range :GeneralPublic .
-
-

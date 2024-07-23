@@ -1,0 +1,97 @@
+@prefix : <http://terminology#> .
+@prefix assertions: <http://assertions#> .
+
+assertions:NSPM-20 a :PresidentialMemorandum ;
+    :is "Presidential Memorandum" ;
+    :is_dated "August 20, 2019"^^xsd:date ;
+    :updates assertions:Federal_process_for_the_launch_of_SNS .
+
+assertions:Federal_process_for_the_launch_of_SNS a :FederalProcess ;
+    :ensures assertions:rigorous_risk_informed_safety_analysis_and_launch_authorization_process .
+
+assertions:rigorous_risk_informed_safety_analysis_and_launch_authorization_process a :Process .
+
+assertions:This_directive a :Directive ;
+    :implements assertions:Federal_requirements_under_NSPM-20 ;
+    :incorporates assertions:NASA_responsibilities .
+
+assertions:NASA_responsibilities a :Responsibility ;
+    :areUnder assertions:authorities_of_other_agencies .
+
+assertions:authorities_of_other_agencies a :Agency ;
+    :areInvolvedIn assertions:launch_of_SNS_or_radioactive_material, assertions:National_Response_Framework, assertions:U.S.’s_international_commitments .
+
+assertions:Procedures_and_levels_of_review_and_analysis a :Process ;
+    :varyWith assertions:quantity_and_form_of_material_planned_for_use, assertions:potential_radiological_risk .
+
+assertions:potential_radiological_risk a :Risk ;
+    :includes assertions:human_health_exposures, assertions:impacts_on_land_use, assertions:impacts_on_property_use .
+
+assertions:Reentry_or_planned_return_to_Earth a :Reentry ;
+    :refersTo assertions:intended_portions_of_the_spaceflight ;
+    :isAddressedIn assertions:authorization_or_concurrence_process .
+
+assertions:Unplanned_reentry a :Reentry ;
+    :refersTo assertions:unintended_event ;
+    :isAddressedIn assertions:safety_analysis_and_RCP_processes .
+
+assertions:Responsibilities_and_requirements a :Responsibility ;
+    :mayBeDelegated assertions:unless_specifically_prohibited .
+
+assertions:Stated_role_or_actor a :Role ;
+    :remainsAccountableFor assertions:implementation_and_outcome .
+
+assertions:Office_or_organization a :Office ;
+    :isStatedAs assertions:actor_of_a_requirement .
+
+assertions:Official_in_Charge a :Official ;
+    :isResponsibleFor assertions:action_and_its_outcome ;
+    :isAccountableFor assertions:action_and_its_outcome .
+
+assertions:Definitions_for_general_terms a :Term ;
+    :areProvidedIn assertions:Appendix_A .
+
+assertions:For_additional_information a :Information ;
+    :see assertions:NPR_8715.3 .
+
+assertions:Chief_SMA a :Authority ;
+    :isApprovingAuthorityFor assertions:requests_for_relief_to_the_requirements_in_this_directive .
+
+assertions:Non-conformances_with_Federal_nuclear_launch_authorization_direction a :NonConformance ;
+    :willBeElevatedTo assertions:Administrator .
+
+assertions:Administrator a :Administrator ;
+    :makeDeterminationsInConsiderationOf assertions:applicable_National_Space_Policy, assertions:responsibilities_defined_in_NPD_8700.1 .
+
+assertions:responsibilities_defined_in_NPD_8700.1 a :Responsibility ;
+    :areWithRegardsTo assertions:consent_to_human_safety_and_property_risk_on_behalf_of_the_general_public .
+
+assertions:consent_to_human_safety_and_property_risk_on_behalf_of_the_general_public a :Consent ;
+    :areOnBehalfOf assertions:GeneralPublic .
+
+assertions:Chapter_6 a :Chapter ;
+    :is "Nuclear Safety for Launching of Radioactive Materials" .
+
+assertions:Appendix_D a :Appendix ;
+    :is "Activity and Radioactive Material Limits - Basic Al /A2 Values" .
+
+assertions:NPR_8715.3D a :ProgramRequirement ;
+    :is "NASA General Safety Program Requirements" ;
+    :is_dated "August 01, 2017"^^xsd:date .
+
+assertions:NPI_8715.93 a :Impact ;
+    :is "Impacts of NSPM-20 on NASA Nuclear Flight Safety Requirements and Practices" ;
+    :is_dated "June 5, 2020"^^xsd:date .
+
+assertions:This_document a :Document ;
+    :does_not_bind :Public ;
+    :is_authorized_by :Law ;
+    :is_incorporated_into :Contract ;
+    :is_uncontrolled_when :printed .
+
+assertions:Check a :Action ;
+    :to_verify_that_this_is_the_correct_version_before_use assertions:the_NASA_Online_Directives_Information_System_NODIS_Library .
+
+assertions:the_NASA_Online_Directives_Information_System_NODIS_Library a :Library .
+
+<http://assertions> a owl:Ontology .
