@@ -1,0 +1,15 @@
+Step 1: Triples
+This directive, establishes, a framework
+Other requirements, are, relevant to nuclear flight safety
+Guidance, is, relevant to nuclear flight safety
+Processes, are, relevant to nuclear flight safety
+DOE nuclear safety and security requirements, are, relevant to nuclear flight safety
+U.S. Air and Space Force range safety requirements, are, relevant to nuclear flight safety
+NASA payload safety processes, are, relevant to nuclear flight safety
+Other requirements, can be implemented, into the overall SMA process
+Guidance, can be implemented, into the overall SMA process
+Processes, can be implemented, into the overall SMA process
+DOE nuclear safety and security requirements, can be implemented, into the overall SMA process
+U.S. Air and Space Force range safety requirements, can be implemented, into the overall SMA process
+NASA payload safety processes, can be implemented, into the overall SMA process
+

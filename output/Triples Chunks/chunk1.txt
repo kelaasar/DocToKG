@@ -1,0 +1,13 @@
+Step 1: Triples
+This directive, describes, NASA’s implementation of Federal requirements under NSPM-20
+NSPM-20, is, “Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems”
+NSPM-20, is dated, August 20, 2019
+This directive, describes, radiological contingency planning (RCP) as a part of broader NASA emergency management activities
+Radiological contingency planning (RCP), is a part of, broader NASA emergency management activities
+Broader NASA emergency management activities, see, NPD 8710.1 and NPR 8715.2
+This directive, describes, other factors
+This directive, describes, agency-specific activities relating to ensuring safety and mission success for NASA-sponsored payloads containing space nuclear systems (SNS) or other radioactive material
+Space nuclear systems (SNS), are, radioactive material
+Other radioactive material, are, radioactive material
+These terms, are defined in, Appendix A
+

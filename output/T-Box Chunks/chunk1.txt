@@ -1,0 +1,41 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Directive a owl:Class .
+:Implementation a owl:Class .
+:FederalRequirement a owl:Class .
+:Memorandum a owl:Class .
+:Date a owl:Class .
+:ContingencyPlanning a owl:Class .
+:EmergencyManagementActivity a owl:Class .
+:Factor a owl:Class .
+:Activity a owl:Class .
+:Safety a owl:Class .
+:MissionSuccess a owl:Class .
+:Payload a owl:Class .
+:SpaceNuclearSystem a owl:Class .
+:RadioactiveMaterial a owl:Class .
+:Term a owl:Class .
+:Appendix a owl:Class .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range [ a owl:Class ] .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ] ;
+    rdfs:range [ a owl:Class ] .
+
+:isDated a owl:ObjectProperty ;
+    rdfs:domain :Memorandum ;
+    rdfs:range :Date .
+
+:see a owl:ObjectProperty ;
+    rdfs:domain :EmergencyManagementActivity ;
+    rdfs:range [ a owl:Class ] .
+
+:areDefinedIn a owl:ObjectProperty ;
+    rdfs:domain :Term ;
+    rdfs:range :Appendix .
+
+

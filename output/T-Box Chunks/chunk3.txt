@@ -1,0 +1,27 @@
+Step 2: T-Box
+@prefix : <http://terminology#> .
+
+:Directive a owl:Class .
+:Entity a owl:Class .
+:ResearchAndDevelopmentCenter a owl:Class .
+:Contract a owl:Class .
+:Grant a owl:Class .
+:Agreement a owl:Class .
+
+:is_applicable_to a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Entity .
+
+:applies_to a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Entity .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range :ResearchAndDevelopmentCenter .
+
+:applies_only_to_the_extent_specified_or_referenced_in a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Contract, :Grant, :Agreement .
+
+

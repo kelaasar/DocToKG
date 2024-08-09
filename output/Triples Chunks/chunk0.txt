@@ -1,0 +1,19 @@
+Step 1: Triples
+This directive, defines, the roles and responsibilities
+The roles and responsibilities, are for, managing and overseeing NASA’s nuclear flight safety activities
+This directive, provides, the requirements
+The requirements, implement, NASA’s policy
+NASA’s policy, protects, the public
+NASA’s policy, protects, NASA workforce
+NASA’s policy, protects, high-value equipment and property
+NASA’s policy, protects, the environment
+NASA’s policy, protects, from potential harm
+Potential harm, results from, NASA activities and operations
+NASA activities and operations, factor, safety
+Safety, is, an integral feature
+Integral feature, is of, programs
+Integral feature, is of, projects
+Integral feature, is of, technologies
+Integral feature, is of, operations
+Integral feature, is of, facilities
+

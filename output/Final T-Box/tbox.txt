@@ -1,0 +1,165 @@
+@prefix : <http://terminology#> .
+
+:Directive a owl:Class .
+:RolesAndResponsibilities a owl:Class .
+:Requirements a owl:Class .
+:Policy a owl:Class .
+:Public a owl:Class .
+:Workforce a owl:Class .
+:EquipmentAndProperty a owl:Class .
+:Environment a owl:Class .
+:Harm a owl:Class .
+:ActivitiesAndOperations a owl:Class .
+:Safety a owl:Class .
+:Feature a owl:Class .
+:Programs a owl:Class .
+:Projects a owl:Class .
+:Technologies a owl:Class .
+:Operations a owl:Class .
+:Facilities a owl:Class .
+:Implementation a owl:Class .
+:FederalRequirement a owl:Class .
+:Memorandum a owl:Class .
+:Date a owl:Class .
+:ContingencyPlanning a owl:Class .
+:EmergencyManagementActivity a owl:Class .
+:Factor a owl:Class .
+:Activity a owl:Class .
+:MissionSuccess a owl:Class .
+:Payload a owl:Class .
+:SpaceNuclearSystem a owl:Class .
+:RadioactiveMaterial a owl:Class .
+:Term a owl:Class .
+:Appendix a owl:Class .
+:Framework a owl:Class .
+:Requirement a owl:Class .
+:Guidance a owl:Class .
+:Process a owl:Class .
+:DOE_Nuclear_Safety_and_Security_Requirement a owl:Class .
+:US_Air_and_Space_Force_Range_Safety_Requirement a owl:Class .
+:NASA_Payload_Safety_Process a owl:Class .
+:Nuclear_Flight_Safety a owl:Class .
+:SMA_Process a owl:Class .
+:Entity a owl:Class .
+:ResearchAndDevelopmentCenter a owl:Class .
+:Contract a owl:Class .
+:Grant a owl:Class .
+:Agreement a owl:Class .
+:Material a owl:Class .
+:Agency a owl:Class .
+:Personnel a owl:Class .
+:Asset a owl:Class .
+:Phase a owl:Class .
+:Biosphere a owl:Class .
+:Program a owl:Class .
+:License a owl:Class .
+:Launch a owl:Class .
+:Officer a owl:Class .
+:Counsel a owl:Class .
+:Responsibility a owl:Class .
+
+:defines a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :RolesAndResponsibilities .
+
+:areFor a owl:ObjectProperty ;
+    rdfs:domain :RolesAndResponsibilities ;
+    rdfs:range :ActivitiesAndOperations .
+
+:provides a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Requirements .
+
+:implement a owl:ObjectProperty ;
+    rdfs:domain :Requirements ;
+    rdfs:range :Policy .
+
+:protects a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Public, :Workforce, :EquipmentAndProperty, :Environment, :Harm .
+
+:resultsFrom a owl:ObjectProperty ;
+    rdfs:domain :Harm ;
+    rdfs:range :ActivitiesAndOperations .
+
+:factor a owl:ObjectProperty ;
+    rdfs:domain :ActivitiesAndOperations ;
+    rdfs:range :Safety .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Safety ;
+    rdfs:range :Feature .
+
+:isOf a owl:ObjectProperty ;
+    rdfs:domain :Feature ;
+    rdfs:range :Programs, :Projects, :Technologies, :Operations, :Facilities .
+
+:describes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range [ a owl:Class ] .
+
+:isDated a owl:ObjectProperty ;
+    rdfs:domain :Memorandum ;
+    rdfs:range :Date .
+
+:see a owl:ObjectProperty ;
+    rdfs:domain :EmergencyManagementActivity ;
+    rdfs:range [ a owl:Class ] .
+
+:areDefinedIn a owl:ObjectProperty ;
+    rdfs:domain :Term ;
+    rdfs:range :Appendix .
+
+:establishes a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Framework .
+
+:is_relevant_to a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( :Requirement :Guidance :Process :DOE_Nuclear_Safety_and_Security_Requirement :US_Air_and_Space_Force_Range_Safety_Requirement :NASA_Payload_Safety_Process ) ] ;
+    rdfs:range :Nuclear_Flight_Safety .
+
+:can_be_implemented_into a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( :Requirement :Guidance :Process :DOE_Nuclear_Safety_and_Security_Requirement :US_Air_and_Space_Force_Range_Safety_Requirement :NASA_Payload_Safety_Process ) ] ;
+    rdfs:range :SMA_Process .
+
+:is_applicable_to a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Entity, :Activity .
+
+:applies_to a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Entity .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Entity, :Agency, :Safety ;
+    rdfs:range :ResearchAndDevelopmentCenter, :Agency, :Feature .
+
+:applies_only_to_the_extent_specified_or_referenced_in a owl:ObjectProperty ;
+    rdfs:domain :Directive ;
+    rdfs:range :Contract, :Grant, :Agreement .
+
+:involve a owl:ObjectProperty ;
+    rdfs:domain :Activity ;
+    rdfs:range :Personnel, :Asset .
+
+:have a owl:ObjectProperty ;
+    rdfs:domain :Phase ;
+    rdfs:range :Biosphere .
+
+:may_fall_under a owl:ObjectProperty ;
+    rdfs:domain :Program ;
+    rdfs:range :Agency .
+
+:is_for a owl:ObjectProperty ;
+    rdfs:domain :License ;
+    rdfs:range :Launch .
+
+:will_consult_with a owl:ObjectProperty ;
+    rdfs:domain :Personnel ;
+    rdfs:range :Officer, :Counsel .
+
+:will_confirm a owl:ObjectProperty ;
+    rdfs:domain :Personnel ;
+    rdfs:range :Responsibility .

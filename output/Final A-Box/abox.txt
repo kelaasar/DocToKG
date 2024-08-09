@@ -1,0 +1,120 @@
+@prefix : <http://terminology#> .
+@prefix assertions: <http://assertions#> .
+
+<http://assertions> a owl:Ontology .
+
+assertions:Directive a :Directive ;
+    :describes assertions:NSPM-20, assertions:RadiologicalContingencyPlanning, assertions:OtherFactors, assertions:AgencySpecificActivities .
+
+assertions:NSPM-20 a :Memorandum ;
+    :is "Presidential Memorandum on Launch of Spacecraft Containing Space Nuclear Systems" ;
+    :isDated assertions:August_20_2019 .
+
+assertions:August_20_2019 a :Date .
+
+assertions:RadiologicalContingencyPlanning a :ContingencyPlanning ;
+    :isPartOf assertions:BroaderNASA_EmergencyManagementActivities .
+
+assertions:BroaderNASA_EmergencyManagementActivities a :EmergencyManagementActivity ;
+    :see assertions:NPD_8710_1, assertions:NPR_8715_2 .
+
+assertions:NPD_8710_1 a :Directive .
+
+assertions:NPR_8715_2 a :Directive .
+
+assertions:OtherFactors a :Factor .
+
+assertions:AgencySpecificActivities a :Activity ;
+    :relatesTo assertions:EnsuringSafetyAndMissionSuccess .
+
+assertions:EnsuringSafetyAndMissionSuccess a :MissionSuccess ;
+    :for assertions:NASA_SponsoredPayloads .
+
+assertions:NASA_SponsoredPayloads a :Payload ;
+    :contain assertions:SpaceNuclearSystems, assertions:OtherRadioactiveMaterial .
+
+assertions:SpaceNuclearSystems a :SpaceNuclearSystem ;
+    :are assertions:RadioactiveMaterial .
+
+assertions:OtherRadioactiveMaterial a :RadioactiveMaterial .
+
+assertions:TheseTerms a :Term ;
+    :areDefinedIn assertions:AppendixA .
+
+assertions:AppendixA a :Appendix .
+
+assertions:Framework a :Framework .
+
+assertions:OtherRequirements a :Requirement ;
+    :is_relevant_to assertions:Nuclear_Flight_Safety ;
+    :can_be_implemented_into assertions:SMA_Process .
+
+assertions:Guidance a :Guidance ;
+    :is_relevant_to assertions:Nuclear_Flight_Safety ;
+    :can_be_implemented_into assertions:SMA_Process .
+
+assertions:Processes a :Process ;
+    :is_relevant_to assertions:Nuclear_Flight_Safety ;
+    :can_be_implemented_into assertions:SMA_Process .
+
+assertions:DOE_Nuclear_Safety_and_Security_Requirements a :DOE_Nuclear_Safety_and_Security_Requirement ;
+    :is_relevant_to assertions:Nuclear_Flight_Safety ;
+    :can_be_implemented_into assertions:SMA_Process .
+
+assertions:US_Air_and_Space_Force_Range_Safety_Requirements a :US_Air_and_Space_Force_Range_Safety_Requirement ;
+    :is_relevant_to assertions:Nuclear_Flight_Safety ;
+    :can_be_implemented_into assertions:SMA_Process .
+
+assertions:NASA_Payload_Safety_Processes a :NASA_Payload_Safety_Process ;
+    :is_relevant_to assertions:Nuclear_Flight_Safety ;
+    :can_be_implemented_into assertions:SMA_Process .
+
+assertions:ThisDirective a :Directive ;
+    :is_applicable_to assertions:NASA_Headquarters, assertions:NASA_Centers, assertions:Component_Facilities, assertions:Technical_and_Service_Support_Centers, assertions:Jet_Propulsion_Laboratory, assertions:Other_Contractors, assertions:Recipients_of_Grants, assertions:Recipients_of_Cooperative_Agreements, assertions:Recipients_of_Other_Agreements ;
+    :applies_only_to_the_extent_specified_or_referenced_in assertions:Applicable_Contracts, assertions:Applicable_Grants, assertions:Applicable_Agreements .
+
+assertions:NASA_Headquarters a :Entity .
+
+assertions:NASA_Centers a :Entity .
+
+assertions:Component_Facilities a :Entity .
+
+assertions:Technical_and_Service_Support_Centers a :Entity .
+
+assertions:Jet_Propulsion_Laboratory a :Entity, :ResearchAndDevelopmentCenter .
+
+assertions:Other_Contractors a :Entity .
+
+assertions:Recipients_of_Grants a :Entity .
+
+assertions:Recipients_of_Cooperative_Agreements a :Entity .
+
+assertions:Recipients_of_Other_Agreements a :Entity .
+
+assertions:Applicable_Contracts a :Contract .
+
+assertions:Applicable_Grants a :Grant .
+
+assertions:Applicable_Agreements a :Agreement .
+
+assertions:ThisDirective a :Directive ;
+    :is_applicable_to assertions:Activities_involving_flight_of_SNS_or_other_radioactive_material .
+
+assertions:NASA a :Agency ;
+    :is assertions:Sponsoring_Agency .
+
+assertions:Activities_involving_flight_of_SNS_or_other_radioactive_material a :Activity ;
+    :involve assertions:NASA_personnel, assertions:NASA_assets .
+
+assertions:Phases_of_a_flight a :Phase ;
+    :have assertions:Potential_to_affect_Earths_biosphere .
+
+assertions:Aspects_of_the_NASA_nuclear_flight_safety_program a :Program ;
+    :may_fall_under assertions:Another_Federal_Agency .
+
+assertions:A_Federal_Aviation_Administration_FAA_issued_license a :License ;
+    :is_for assertions:Launch_of_NASA_provided_radioactive_material .
+
+assertions:NASA_personnel a :Personnel ;
+    :will_consult_with assertions:Nuclear_Flight_Safety_Officer, assertions:Office_of_the_General_Counsel ;
+    :will_confirm assertions:Responsibilities_for_nuclear_flight_safety .
