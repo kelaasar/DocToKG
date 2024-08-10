@@ -1,58 +1,39 @@
 Step 2: T-Box
 @prefix : <http://terminology#> .
 
-:Directive a owl:Class .
-:RolesAndResponsibilities a owl:Class .
-:Requirements a owl:Class .
-:Policy a owl:Class .
-:Public a owl:Class .
-:Workforce a owl:Class .
-:EquipmentAndProperty a owl:Class .
-:Environment a owl:Class .
-:Harm a owl:Class .
-:ActivitiesAndOperations a owl:Class .
-:Safety a owl:Class .
-:Feature a owl:Class .
-:Programs a owl:Class .
-:Projects a owl:Class .
-:Technologies a owl:Class .
-:Operations a owl:Class .
-:Facilities a owl:Class .
-
-:defines a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :RolesAndResponsibilities .
-
-:areFor a owl:ObjectProperty ;
-    rdfs:domain :RolesAndResponsibilities ;
-    rdfs:range :ActivitiesAndOperations .
-
-:provides a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :Requirements .
-
-:implement a owl:ObjectProperty ;
-    rdfs:domain :Requirements ;
-    rdfs:range :Policy .
-
-:protects a owl:ObjectProperty ;
-    rdfs:domain :Policy ;
-    rdfs:range :Public, :Workforce, :EquipmentAndProperty, :Environment, :Harm .
-
-:resultsFrom a owl:ObjectProperty ;
-    rdfs:domain :Harm ;
-    rdfs:range :ActivitiesAndOperations .
-
-:factor a owl:ObjectProperty ;
-    rdfs:domain :ActivitiesAndOperations ;
-    rdfs:range :Safety .
+:Actor a owl:Class .
+:Filmmaker a owl:Class .
+:Role a owl:Class .
+:FilmStar a owl:Class .
+:CulturalIcon a owl:Class .
+:Film a owl:Class .
+:Gross a owl:Class .
+:Amount a owl:Class .
+:Actor a owl:Class .
+:NorthAmerica a owl:Class .
 
 :is a owl:ObjectProperty ;
-    rdfs:domain :Safety ;
-    rdfs:range :Feature .
+    rdfs:domain :Actor ;
+    rdfs:range :Filmmaker .
 
-:isOf a owl:ObjectProperty ;
-    rdfs:domain :Feature ;
-    rdfs:range :Programs, :Projects, :Technologies, :Operations, :Facilities .
+:isKnownFor a owl:ObjectProperty ;
+    rdfs:domain :Actor ;
+    rdfs:range :Role .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Actor ;
+    rdfs:range :FilmStar .
+
+:isRegardedAs a owl:ObjectProperty ;
+    rdfs:domain :Actor ;
+    rdfs:range :CulturalIcon .
+
+:haveGrossed a owl:ObjectProperty ;
+    rdfs:domain :Film ;
+    rdfs:range :Amount .
+
+:is a owl:ObjectProperty ;
+    rdfs:domain :Actor ;
+    rdfs:range :NorthAmerica .
 
 

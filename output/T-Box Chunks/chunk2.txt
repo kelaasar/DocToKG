@@ -1,29 +1,18 @@
 Step 2: T-Box
 @prefix : <http://terminology#> .
 
-:Directive a owl:Class .
-:Framework a owl:Class .
-:Requirement a owl:Class .
-:Guidance a owl:Class .
-:Process a owl:Class .
-:DOE_Nuclear_Safety_and_Security_Requirement a owl:Class .
-:US_Air_and_Space_Force_Range_Safety_Requirement a owl:Class .
-:NASA_Payload_Safety_Process a owl:Class .
-:Nuclear_Flight_Safety a owl:Class .
-:SMA_Process a owl:Class .
+:Person a owl:Class .
+:Film a owl:Class .
+:Miniseries a owl:Class .
+:Director a owl:Class .
 
-:establishes a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range :Framework .
+:collaborated_with a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Director .
 
-:is_relevant_to a owl:ObjectProperty ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( :Requirement :Guidance :Process :DOE_Nuclear_Safety_and_Security_Requirement :US_Air_and_Space_Force_Range_Safety_Requirement :NASA_Payload_Safety_Process ) ] ;
-    rdfs:range :Nuclear_Flight_Safety .
-
-:can_be_implemented_into a owl:ObjectProperty ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( :Requirement :Guidance :Process :DOE_Nuclear_Safety_and_Security_Requirement :US_Air_and_Space_Force_Range_Safety_Requirement :NASA_Payload_Safety_Process ) ] ;
-    rdfs:range :SMA_Process .
+:collaborated_on a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range [ a owl:Class ;
+                 owl:unionOf (:Film :Miniseries) ] .
 
 

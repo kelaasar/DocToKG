@@ -1,15 +1,16 @@
 Step 1: Triples
-This directive, establishes, a framework
-Other requirements, are, relevant to nuclear flight safety
-Guidance, is, relevant to nuclear flight safety
-Processes, are, relevant to nuclear flight safety
-DOE nuclear safety and security requirements, are, relevant to nuclear flight safety
-U.S. Air and Space Force range safety requirements, are, relevant to nuclear flight safety
-NASA payload safety processes, are, relevant to nuclear flight safety
-Other requirements, can be implemented, into the overall SMA process
-Guidance, can be implemented, into the overall SMA process
-Processes, can be implemented, into the overall SMA process
-DOE nuclear safety and security requirements, can be implemented, into the overall SMA process
-U.S. Air and Space Force range safety requirements, can be implemented, into the overall SMA process
-NASA payload safety processes, can be implemented, into the overall SMA process
+Tom Hanks, collaborated with, Steven Spielberg
+Tom Hanks, collaborated on, five films
+Tom Hanks, collaborated on, Saving Private Ryan
+Tom Hanks, collaborated on, Catch Me If You Can
+Tom Hanks, collaborated on, The Terminal
+Tom Hanks, collaborated on, Bridge of Spies
+Tom Hanks, collaborated on, The Post
+Tom Hanks, collaborated on, World War II miniseries
+Tom Hanks, collaborated on, Band of Brothers
+Tom Hanks, collaborated on, The Pacific
+Tom Hanks, collaborated on, Masters of the Air
+Tom Hanks, collaborated with, Ron Howard
+Tom Hanks, collaborated with, Nora Ephron
+Tom Hanks, collaborated with, Robert Zemeckis
 

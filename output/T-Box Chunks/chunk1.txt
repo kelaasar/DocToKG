@@ -1,41 +1,41 @@
 Step 2: T-Box
 @prefix : <http://terminology#> .
 
-:Directive a owl:Class .
-:Implementation a owl:Class .
-:FederalRequirement a owl:Class .
-:Memorandum a owl:Class .
-:Date a owl:Class .
-:ContingencyPlanning a owl:Class .
-:EmergencyManagementActivity a owl:Class .
-:Factor a owl:Class .
-:Activity a owl:Class .
-:Safety a owl:Class .
-:MissionSuccess a owl:Class .
-:Payload a owl:Class .
-:SpaceNuclearSystem a owl:Class .
-:RadioactiveMaterial a owl:Class .
-:Term a owl:Class .
-:Appendix a owl:Class .
+:Person a owl:Class .
+:Role a owl:Class .
+:Movie a owl:Class .
+:Award a owl:Class .
+:Character a owl:Class .
 
-:describes a owl:ObjectProperty ;
-    rdfs:domain :Directive ;
-    rdfs:range [ a owl:Class ] .
+:made a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Event .
+
+:had a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Role .
+
+:are_in a owl:ObjectProperty ;
+    rdfs:domain :Role ;
+    rdfs:range :Genre .
 
 :is a owl:ObjectProperty ;
-    rdfs:domain [ a owl:Class ] ;
-    rdfs:range [ a owl:Class ] .
+    rdfs:domain :Movie ;
+    rdfs:range :Genre .
 
-:isDated a owl:ObjectProperty ;
-    rdfs:domain :Memorandum ;
-    rdfs:range :Date .
+:won a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Award .
 
-:see a owl:ObjectProperty ;
-    rdfs:domain :EmergencyManagementActivity ;
-    rdfs:range [ a owl:Class ] .
+:played a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Character .
 
-:areDefinedIn a owl:ObjectProperty ;
-    rdfs:domain :Term ;
-    rdfs:range :Appendix .
+:features a owl:ObjectProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range :Character .
+
+:Genre a owl:Class .
+:Event a owl:Class .
 
 

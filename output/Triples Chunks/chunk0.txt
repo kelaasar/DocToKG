@@ -1,19 +1,10 @@
 Step 1: Triples
-This directive, defines, the roles and responsibilities
-The roles and responsibilities, are for, managing and overseeing NASA’s nuclear flight safety activities
-This directive, provides, the requirements
-The requirements, implement, NASA’s policy
-NASA’s policy, protects, the public
-NASA’s policy, protects, NASA workforce
-NASA’s policy, protects, high-value equipment and property
-NASA’s policy, protects, the environment
-NASA’s policy, protects, from potential harm
-Potential harm, results from, NASA activities and operations
-NASA activities and operations, factor, safety
-Safety, is, an integral feature
-Integral feature, is of, programs
-Integral feature, is of, projects
-Integral feature, is of, technologies
-Integral feature, is of, operations
-Integral feature, is of, facilities
+Thomas Jeffrey Hanks, is, an American actor
+Thomas Jeffrey Hanks, is, a filmmaker
+Thomas Jeffrey Hanks, is known for, both his comedic and dramatic roles
+Thomas Jeffrey Hanks, is, one of the most popular and recognizable film stars worldwide
+Thomas Jeffrey Hanks, is regarded as, an American cultural icon
+Hanks's films, have grossed, more than $4.9 billion in North America
+Hanks's films, have grossed, more than $9.96 billion worldwide
+Thomas Jeffrey Hanks, is, the fourth-highest-grossing actor in North America
 
